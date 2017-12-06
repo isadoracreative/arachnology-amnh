@@ -28,16 +28,18 @@ a:active {
   color: #000;
 }
 header {
-  background-color: #111;
+  background-color: #222;
   height: 100px;
   position: fixed;
   top: 0;
   width: 100%;
+  transition: all 1s;
+  z-index: 9;
 }
 header #logo-header {
   float: left;
-  padding: 18px 20px 15px 15px;
-  width: 250px;
+  padding: 22px 20px 15px 18px;
+  width: 200px;
   transition: all 1s;
 }
 header nav {
@@ -63,13 +65,14 @@ header nav a:active {
   color: #007ca0;
 }
 header.header-offset {
+  background-color: #111;
   height: 50px;
   transition: all 1s;
 }
 header.header-offset #logo-header {
-  margin-top: -8px;
+  margin-top: -18px;
   transition: all 1s;
-  width: 130px;
+  width: 180px;
 }
 header.header-offset nav li {
   font-size: 12px;
@@ -90,7 +93,7 @@ header.header-offset nav li {
 h1, h2 {
   color: #007ca0;
   font-family: 'atrament', sans-serif;
-  font-size: 40px;
+  font-size: 48px;
   margin: 40px 0 15px;
   text-align: center;
 }
@@ -100,19 +103,35 @@ p {
   padding-bottom: 10px;
 }
 .narrow {
-  margin: 0 auto;
+  margin: 40px auto;
   width: 600px;
   max-width: 90%;
 }
 .medium {
-  margin: 20px auto;
+  margin: 40px auto;
   width: 960px;
   max-width: 90%;
 }
-.line-below {
-  border-bottom: 1px solid lightgray;
+.wide {
+  margin: 40px auto;
+  width: 1200px;
+  max-width: 90%;
+}
+.line-below::after {
+  border-bottom: 3px solid lightgray;
+  content:"";
+  display:block;
   padding-bottom: 20px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  width: 25%;
+}
+.line-above::before {
+  border-bottom: 3px solid lightgray;
+  content:"";
+  display:block;
+  padding-bottom: 20px;
+  margin: 0 auto 20px;
+  width: 25%;
 }
 .three-col li {
   text-align: center;
@@ -147,11 +166,11 @@ ul.show-less li p {
 ul.show-less li p::after {
     content:"...more";
 }
-section.blue {
-  background-color: rgba(0, 124, 160, .18);
+section.shaded {
+  background-color: rgba(0,0,0,.04);
 }
 #related-projects {
-  padding: 20px;
+  padding: 10px;
 }
 .five-col li {
   text-align: center;
@@ -159,17 +178,13 @@ section.blue {
   margin: 0 10px;
   width: calc((100% / 5) - 20px);
 }
-.wide {
-  margin: 20px auto;
-  width: 1200px;
-  max-width: 90%;
-}
 div.tile {
   background-color: #fff;
   border-top: 8px solid #007ca0;
   box-shadow: 0 4px 8px rgba(0,0,0,.2);
   height: 200px;
   margin: 10px 0;
+  position: relative;
 }
 h4 {
   font-size: 14px;
@@ -182,6 +197,8 @@ h4.tile-title {
   color: white;
   height: 80px;
   padding: 10px;
+  position: absolute;
+  bottom: 0;
   text-align: left;
   width: 100%;
 }
@@ -199,17 +216,69 @@ p.tile-description::before {
   padding-right: 8px;
 } */
 p.tile-description {
+  font-size: 15px;
   line-height: 1.3;
   padding: 0 5px 0 2px;
   text-align: left;
 }
 p.tile-description::after {
-  color: #c9242b;
+  color: #007ca0;
   content: "\f0a9";
   font-family: FontAwesome;
-  font-size: 17px;
+  font-size: 15px;
+  line-height: 1.1;
   padding-left: 6px;
 }
-
-
-
+#tile-south-african {
+  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512503448/south-african-arachnid-biodiversity-TypeCatalogueNumberVerification_cr0mb3.jpg);
+  background-size: cover;
+}
+#tile-western-cape {
+  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512503447/western-cape-scorpions-6d68444d8da11a848a7e54d4e445f694_cogxar.jpg);
+  background-size: cover;
+}
+#tile-karoo-biogaps {
+  background-image: url(http://res.cloudinary.com/isadora/image/upload/v1512503447/karoo-biogaps-project-supporters-of-the-karoo-biogaps_n2qux7.jpg);
+  background-size: cover;
+}
+#tile-vaejovidae {
+  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512503446/vaejovidae-project-Site-07-P-rufulus_fhfw5w.jpg);
+  background-size: cover;
+}
+#tile-solifugae {
+  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512504584/solifugae-G-fumi-in-jar_xxheqx.jpg);
+  background-size: cover;
+}
+footer {
+  background-color: #222;
+}
+footer i.fa {
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+}
+#site-map {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.8;
+}
+#site-map p.page-title {
+  color: #eee;
+  font-family: 'atrament', sans-serif;
+  font-size: 24px;
+  padding: 5px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#footer-menu {
+  text-align: left;
+  float: left;
+  margin: 0 10px;
+  width: calc((100% / 5) - 20px);
+}
+/* #footer-menu .submenu {
+  text-align: left;
+  float: left;
+  margin: 0 10px;
+  width: calc((100% / 5) - 20px);
+} */
