@@ -38,8 +38,8 @@ header {
 }
 header #logo-header {
   float: left;
-  padding: 22px 20px 15px 18px;
-  width: 200px;
+  padding: 18px 20px;
+  width: 240px;
   transition: all 1s;
 }
 header nav {
@@ -72,7 +72,7 @@ header.header-offset {
 header.header-offset #logo-header {
   margin-top: -18px;
   transition: all 1s;
-  width: 180px;
+  width: 200px;
 }
 header.header-offset nav li {
   font-size: 12px;
@@ -252,6 +252,10 @@ p.tile-description::after {
 footer {
   background-color: #222;
 }
+#footer-menu {
+  padding: 40px 10px;
+  margin: 0 auto;
+}
 footer i.fa {
   color: white;
   font-size: 20px;
@@ -263,22 +267,23 @@ footer i.fa {
   line-height: 1.8;
 }
 #site-map p.page-title {
-  color: #eee;
+  color: white;
   font-family: 'atrament', sans-serif;
   font-size: 24px;
-  padding: 5px 0;
+  padding: 15px 0 5px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-#footer-menu {
-  text-align: left;
+#footer-menu .submenu {
   float: left;
   margin: 0 10px;
-  width: calc((100% / 5) - 20px);
+  width: calc((100% / 6) - 20px);
 }
-/* #footer-menu .submenu {
-  text-align: left;
-  float: left;
-  margin: 0 10px;
-  width: calc((100% / 5) - 20px);
-} */
+#copyright p {
+  background-color: black;
+  color: #ccc;
+  font-size: 12px;
+  line-height: 1.8;
+  padding: 20px;
+  text-align: center;
+}
