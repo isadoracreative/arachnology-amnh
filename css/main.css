@@ -230,23 +230,23 @@ p.tile-description::after {
   padding-left: 6px;
 }
 #tile-south-african {
-  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512503448/south-african-arachnid-biodiversity-TypeCatalogueNumberVerification_cr0mb3.jpg);
-  background-size: cover;
-}
-#tile-western-cape {
-  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512503447/western-cape-scorpions-6d68444d8da11a848a7e54d4e445f694_cogxar.jpg);
+  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512657583/south-african-arachnid-biodiversity-60170.Capturing-a-burrowing-scorpion_roky3p.jpg);
   background-size: cover;
 }
 #tile-karoo-biogaps {
-  background-image: url(http://res.cloudinary.com/isadora/image/upload/v1512503447/karoo-biogaps-project-supporters-of-the-karoo-biogaps_n2qux7.jpg);
+  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512658065/Lorenzo_2BPrendini_2Bdigging_2Bscorpion_2Bburrow_d3clhk.jpg);
+  background-size: cover;
+}
+#tile-western-cape {
+  background-image: url(https://res.cloudinary.com/isadora/image/upload/e_improve/v1512657671/939dd004b48f57133b2a1d6d4cb4e425_e5peeh.jpg);
   background-size: cover;
 }
 #tile-vaejovidae {
-  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512503446/vaejovidae-project-Site-07-P-rufulus_fhfw5w.jpg);
+  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512656215/Fixing-scorpions_ryvw2e.jpg);
   background-size: cover;
 }
 #tile-solifugae {
-  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512504584/solifugae-G-fumi-in-jar_xxheqx.jpg);
+  background-image: url(https://res.cloudinary.com/isadora/image/upload/c_crop/v1512656718/solifugae-G-fumi-in-jar-corrected_rqb6dr.jpg);
   background-size: cover;
 }
 footer {
@@ -264,7 +264,6 @@ footer i.fa {
 #site-map {
   color: #ccc;
   font-size: 14px;
-  line-height: 1.8;
 }
 #site-map p.page-title {
   color: white;
@@ -278,6 +277,10 @@ footer i.fa {
   float: left;
   margin: 0 10px;
   width: calc((100% / 6) - 20px);
+}
+#footer-menu .submenu li {
+  line-height: 1.4;
+  padding: 4px;
 }
 #copyright p {
   background-color: black;
