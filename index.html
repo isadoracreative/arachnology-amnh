@@ -28,14 +28,16 @@
       <li><a href="">Fieldwork</a></li>
       <li><a href="">Publications</a></li>
       <li><a href="">Resources</a></li>
-      <!-- contact will be a pop-up -->
+      <!-- contact as a pop-up? -->
       <li><a href="">Contact</a></li>
     </ul>
   </nav>
 </header>
-<!--  add parallax images behind, make the opacity of the hero background around 75%, and move it down so it shows a little of the parallax image above (below the header) before scrolling up. maybe reduce opacity completely on scroll  -->
+<main>
 <section id="hero">
-    <img src="https://res.cloudinary.com/isadora/image/upload/v1511710485/logo_color-ko.svg" alt="Logo: AMNH Aracnology Lab" id="logo-hero">
+  <div id="logo-hero">
+    <img src="https://res.cloudinary.com/isadora/image/upload/v1511710485/logo_color-ko.svg" alt="Logo: AMNH Aracnology Lab">
+  </div>
 </section>
 <article id="why-scorpions" class="narrow line-below">
   <h1>Why Scorpions?</h1>
@@ -131,15 +133,26 @@
   </ul>
 </aside>
 </section>
+</main>
+
 <footer>
+<!--  add <a href>'s to everything  -->
   <section id="footer-menu" class="wide clearfix">
-    <section id="connect" class="submenu">
-      <div class="logo"></div>
-      <div class="contact">
+    <section id="connect-footer" class="submenu">
+      <div class="logo"><a href="#">
+        <img src="https://res.cloudinary.com/isadora/image/upload/v1512515734/logo-ko-icon_ek2rkr.svg" alt="AMNH Arachnology Logo" id="logo-icon-footer">
+  </a></div>
+      <div id="contact-footer">
+        <p>Arachnology at American Museum of Natural History</p>
+        <p>
+Central Park W. at 79th St.<br>
+New York, NY 10024</p>
         <i class="fa fa-envelope-o"></i>
         <i class="fa fa-phone"></i>
       </div>
-      <div class="logo-amnh"></div>
+      <div id="logo-amnh"><a href="https://www.amnh.org/">
+        <img src="https://res.cloudinary.com/isadora/image/upload/v1512861198/logo-amnh_vrt_1cp_blk-12in-ko_ynxjsm.png" alt="AMNH Logo" id="logo-amnh-footer">
+  </a></div>
       <div class="social">
         <i class="fa fa-youtube-play"></i>
         <i class="fa fa-twitter"></i>
@@ -213,7 +226,8 @@
     </section>
   </section>
   <section id="copyright">
-    <p>&copy; 2006-2018 Lorenzo Prendini&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Content Revised by Pío Colmenares: December 2017&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Web Design Revised by Isadora Williams: January 2018
+<!--   add links to Lorenzo and Pío anchors on people page   -->
+    <p>&copy; 2006-2018 <a href="#">Lorenzo Prendini</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Content Revised by <a href="#">Pío Colmenares</a>: December 2017&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Web Design Revised by <a href="http://isadoracreative.com" target="_blank">Isadora Williams</a>: January 2018
     </p>
   </section>
 </footer>
