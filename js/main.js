@@ -14,10 +14,8 @@ $(window).scroll(function () {
 // user scrolls past initial view
 // header transitions to smaller header and sticks to top of window
 
-// PSEUDOCODE for header
+// (new) PSEUDOCODE for header
 
-// I have to admit I wrote the above js before the pseudocode, so below is practice for writing it differently
-// I plan to rebuild the page using bootstrap, so I'll be reworking this stuff anyway
 // grab header
 // listen for scroll past 150px
 // if header has scrolled past 150px, add the class for the smaller header <-will require css class with transition
