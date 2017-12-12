@@ -16,14 +16,15 @@ $(window).scroll(function () {
 
 // PSEUDOCODE for header
 
-// I have to admit I wrote the above js before the pseudocode, so below is practice for writing it differently:
+// I have to admit I wrote the above js before the pseudocode, so below is practice for writing it differently
+// I plan to rebuild the page using bootstrap, so I'll be reworking this stuff anyway
 // grab header
 // listen for scroll past 150px
-// if header has scrolled past 150px, add the class for the smaller header <-will require creating css class and adding transition
-// else (header has not scrolled past 150px), remove the class for the small header
+// if header has scrolled past 150px, add the class for the smaller header <-will require css class with transition
+// else if header has not scrolled past 150px, remove the class for the small header
 
 
-// USERFLOW for #reasons-grid
+// USERFLOW for #reasons-grid entrance
 
 // user scrolls past previous article
 // icons within #reasons-grid .animate with zoomIn one row at a time
@@ -32,25 +33,44 @@ $(window).scroll(function () {
 // PSEUDOCODE for #reasons-grid
 
 // grab #reasons-grid i.fa
-// listen for top of #reasons-grid i.fa to reach 50% of height of viewport
-// Attach a change event to #
-  
+// assign variable to 50% of height of viewport
+// use scrollTop to return the position of #reasons-grid i.fa
+// if #reasons-grid i.fa has scrolled past 50% height of viewport, .animate with zoomIn
+// else if #reasons-grid i.fa has not scrolled past 50% height of viewport, don't execute <-is that necessary? maybe there's a better way to write this
+
+
+// USERFLOW for #reasons-grid interactiion
+
+// full #reasons-grid p hidden
+// user hovers over or taps #reasons-grid li
+// show #reasons-grid p as styled to popover rest of content
+// user hovers off or taps off #reasons-grid li
+// return to full #reasons-grid p hidden
+
+
+// PSEUDOCODE for #reasons-grid interactiion
+
+// grab #reasons-grid li
+// grab identity of li (eg. #diversity or #antiquity)
+// listen for hover or tap on #reasons-grid li with that id
+// add a class to #reasons-grid li with that id that styles the li, h3, and p as a popover
+// listen for hover off #reasons-grid
+// listen for tap outside of #reasons-grid <-is "tapping outside" a real thing? more research required
+// remove the above class from all #reasons-grid li's
+
+
+// USERFLOW for #related-projects
+
+// user hovers over tile
+// background image grows within the div
+
+
+// PSEUDOCODE for #related-projects
+
+// grab #related-projects div.tile
+// attach hover event to #related-projects div.tile
+// instruct handlerIn to increase the background-size to 150%
+// instruct handlerOut to return the background-size to cover
 
 
 
-// Instructions:
-// 1. Attach a change event to #city-type;
-// $('#city-type').change(updateBackground)
-
-// // 2. Associate the above change event with an anonymous function
-// function updateBackground() {
-//   // 3. Inside this anonymous function, do the following:
-  
-// // 4. Create a variable, city, that stores the selected value of #city-type (hint: use .val())
-//   const city = $('#city-type').val();
-// // 5. Remove all classes from the <body> element using the .removeClass() method
-//   $('body').removeClass();
-// // 6. The variable you created in step 4, corresponds to a CSS class (check in the sytle.css file for more info)
-// //    Use the .addClass() method to add this variable as a class to <body>  
-//   $('body').addClass(city);
-// }
