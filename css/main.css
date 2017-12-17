@@ -1,6 +1,24 @@
 /* Styles for AMNH scorpions website */
 /* Website visual design and front-end development by Isadora Williams, copyright 2018 */
-* {
+
+
+body {
+  font-family: "proxima-nova", sans-serif;
+}
+.bg-dark {
+  background-color: rgba(0,0,0,1) !important;
+}
+.navbar-brand img {
+  width: 240px;
+  margin-top: -5px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  fon
+
+/* convert below to bootstrap */
+
+/** {
   box-sizing: border-box;
 }
 .clearfix::after {
@@ -170,12 +188,12 @@ ul.show-less li p {
   line-height:1.3em;
   margin-bottom: 20px;
   overflow:hidden;
-}
+}*/
 /* js: on hover, the full text of each <li> will appear above the <ul>. */
 /* Maybe I need to do this with js. I'm trying to have a "...more" appear after or below the third line. */
 /* use js hide/show with a separate <p> for "...more" */
 /* or use slideToggle with one button inject html to change toggle text of button to "more" or "less" */
-ul.show-less li p::after {
+/*ul.show-less li p::after {
     content:"...more";
 }
 section.shaded {
@@ -213,7 +231,7 @@ h4.tile-title {
   bottom: 0;
   text-align: left;
   width: 100%;
-}
+}*/
 /* description with the arrow before */
 /* p.tile-description {
   line-height: 1.3;
@@ -227,7 +245,7 @@ p.tile-description::before {
   margin-left: -23px;
   padding-right: 8px;
 } */
-p.tile-description {
+/*p.tile-description {
   font-size: 15px;
   line-height: 1.3;
   padding: 0 5px 0 2px;
@@ -339,4 +357,4 @@ div#logo-amnh {
 }
 #copyright a:active {
   color: #007ca0;
-}
+}*/
