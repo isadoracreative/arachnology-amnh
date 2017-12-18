@@ -1,20 +1,123 @@
 /* Styles for AMNH scorpions website */
 /* Website visual design and front-end development by Isadora Williams, copyright 2018 */
 
+/* Typekit fonts need @import to show up in codepen */
+/*@import url("https://use.typekit.net/upo7xbg.css");*/
 
 body {
   font-family: "proxima-nova", sans-serif;
 }
 .bg-dark {
-  background-color: rgba(0,0,0,1) !important;
+  background-color: rgba(0,0,0,.8) !important;
+}
+.bg-trans {
+  background-color: rgba(0,0,0,0);
 }
 .navbar-brand img {
-  width: 240px;
   margin-top: -5px;
+  width: 240px;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: white;
-  fon
+  font-size: .9rem;
+}
+.jumbotron {
+  height: 380px;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  z-index: -2;
+}
+#homepage-header {
+  background: #000 url(https://res.cloudinary.com/isadora/image/upload/e_auto_contrast/v1512864623/scorpions/Emperor_Scorpion_Under_UV_Light.jpg) no-repeat -100px -50px fixed;
+  background-size: auto 450px;
+  height: 380px;
+  z-index: -1;
+}
+#logo-header {
+  max-width: 700px;
+}
+h1, h2 {
+  color: #007ca0;
+  font-family: 'atrament', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+h3 {
+  color: #c9242b;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.line-below:after {
+  border-bottom: 3px solid lightgray;
+  content:"";
+  display:block;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+  width: 25%;
+}
+#reasons-grid ul,  #reasons-grid li{
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+i.fa {
+  color: #c9242b;
+  font-size: 2.5rem;
+  padding: 10px;
+}
+ul.show-less li p {
+  height: 5rem;
+  line-height: 1.3rem;
+  overflow: hidden;
+}
+ul.show-less li p.read-more {
+  color: #007ca0;
+  height: 1rem;
+  margin: -.5rem 0 0;
+  text-align: right;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #homepage-header {
+    background-position: 0px -50px;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .jumbotron {
+    height: 500px;
+  }
+  #homepage-header {
+    background-position: 0px -50px;
+    background-size: auto 650px;
+    height: 500px;
+  }
+  #reasons-grid li{
+    padding: 30px;
+    text-align: center;
+  }
+  ul.show-less li p.read-more {
+    text-align: center;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .jumbotron {
+    height: 800px;
+  }
+  #homepage-header {
+    background-position: 100px -130px;
+    background-size: auto 1000px;
+    height: 800px;
+  }
+}
 
 /* convert below to bootstrap */
 

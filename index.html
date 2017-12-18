@@ -8,129 +8,133 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
     <!-- Typekit fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/upo7xbg.css">
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/c2152b0b49.js"></script>
-    <!-- AMNH Scorpions CSS -->
-    <link rel="stylesheet" href="css/main.css">
   </head>
   
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/isadora/image/upload/v1513466790/scorpions/logo/logo-ko-no-tagline-sm.png" alt="AMNH Arachnology Logo"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="nav-header">
+        <a class="navbar-brand" href="#">
+          <img src="https://res.cloudinary.com/isadora/image/upload/v1513466790/scorpions/logo/logo-ko-no-tagline-sm.png" alt="AMNH Arachnology Logo" class="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">People</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Facilities</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Collections</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Fieldwork</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Publications</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Resources</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">People</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Facilities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Fieldwork</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="jumbotron jumbotron-fluid position-relative">
+        <div class="container-fluid position-fixed" id="homepage-header"></div>
+        <div class="container-fluid h-100 position-absolute bg-dark"></div>
+        <div class="h-100 d-flex align-items-center justify-content-center">
+          <img src="https://res.cloudinary.com/isadora/image/upload/v1511710485/logo_color-ko.svg" alt="Logo: AMNH Aracnology Lab" class="col-sm-10 col-md-8 pr-4 pt-5" id="logo-header">
+        </div>
+      </div> <!-- jumbotron -->
+    </header>
+    <main class="scroll-second">
+<!-- insert quicklinks section (ref. mob. wireframe) -->
+      <div class="container-fluid bg-light py-5">
+        <article class="container col-11 col-sm-10 col-md-8 col-lg-7 col-xl-6 line-below" id="why-scorpions">
+          <h1>Why Scorpions?</h1>
+          <p class="lead">The Arachnology Lab at the AMNH focuses on the taxonomy, phylogeny and biogeography of scorpions and related arachnid orders. There are many compelling reasons to study these organisms. Scorpions and their kin are ancient, medically important, ecologically, morphologically and taxonomically diverse, and distributed in most terrestrial habitats and elevations on all continents except Antarctica. Scorpions inspire fear and fascination. Many species are threatened yet little is known about their biology, new species remain to be discovered, and there are few experts globally. The world scorpion fauna will remain poorly known until more scorpion specialists are trained and prospects for their employment improve.</p>
+        </article>
+      <!-- list/grid of topics with icon, title, and a few lines of text  -->
+    <!-- add animate.css zoomIn to icons -->
+    <!-- on rollover/tap the full topic description appears, layered over section/screen  -->
+        <article class="container col-11 col-sm-10 col-xl-7" id="reasons-grid">
+          <ul class="row show-less">
+            <li class="col-md-4" id="diversity">
+              <i class="fa fa-list-ol" aria-hidden="true"></i>
+              <h3>Diversity</h3>
+              <p>As listed in the Synopsis of Described Scorpions of the World and the Scorpion Files, approximately 2259 extant species in 209 genera and, depending on the authority, between 13 and 20 families (depending on the authority), as well as 92 extinct species in 71 genera and 42 families, are recognized in the arachnid order Scorpiones. This is an almost fourfold increase in the number of species listed a century ago in Kraepelin's (1899) Revision der Skorpione. Although comprising only a small component of arthropod diversity, scorpions are of considerable interest to scientist and layman alike.</p>
+              <p class="read-more">Read more...</p>
+            </li>
+            <li class="col-md-4" id="antiquity">
+              <i class="fa fa-history" aria-hidden="true"></i>
+              <h3>Antiquity</h3>
+              <p>Scorpions enjoy widespread public appeal (much of it based on fear). Their toxicity, relatively large size and fearsome appearance, notwithstanding the great age of their lineage, contribute to a fascination that has always and continues to surround them. Among the most ancient arthropods, derived from amphibious ancestors that lived in the Silurian, more than 400 million years ago, scorpions have earned the title of 'living fossils'. The scorpion ground plan, developed so long ago, is highly successful. Paleozoic scorpions closely resemble their modern descendants in basic anatomical details, except that some were considerably larger. Brontoscorpio anglicus measured approximately 1 meter in length-an order of magnitude greater than the largest extant Pandinus from tropical Africa, which average about 20 cm. Scorpions were formerly considered the sister group of other arachnids because they closely resemble extinct marine eurypterids (the sister group of arachnids) but recent data suggest that scorpions are embedded in the arachnid lineage, and merely retain primitive features.</p>
+              <p class="read-more">Read more...</p>
+            </li>
+            <li class="col-md-4">
+              <i class="fa fa-flag-o" aria-hidden="true"></i>
+              <h3>Notoriety</h3>
+              <p>Scorpions are notorious worldwide. Scorpion venoms contain multiple low molecular weight proteinaceous neurotoxins that block sodium and potassium channels, preventing the transmission of nerve impulses across synapses. In regions where scorpion envenomation represents a significant cause of morbidity and mortality (e.g. Mexico, North Africa and the Middle East), scorpions are justifiably feared. Some 100 000 scorpion stings occur annually in Mexico and as many as 800 people (mostly young children and the elderly) die as a result. The figures may be even higher in North Africa and the Middle East. Nevertheless, most scorpions are harmless. The sting may be painful, but not dangerous. Only about 25 species, all in family Buthidae, are considered medically important worldwide. Most of these occur in the New World genera Centruroides and Tityus, and the Old World genera Androctonus, Buthus, Leiurus, Mesobuthus and Parabuthus. Centruroides exilicauda, from Arizona, California, and New Mexico, is the only species known to be lethal in the U.S.A. The venom of these scorpions has proved fatal to healthy children up to 16 years of age and to adults suffering from hypertension and general debility. </p>
+              <p class="read-more">Read more...</p>
+            </li>
+            <li class="col-md-4">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+              <h3>Distribution</h3>
+              <p>Scorpions occur on all continents except Antarctica, but are most abundant and diverse in tropical and subtropical regions. The greatest abundance and diversity of scorpions occurs in desert and semi-desert habitats, but they may also be found in savannas and grasslands, in deciduous, coniferous, and tropical rainforests, on high mountain slopes (above 5500 m elevation) in the Alps, Himalayas and Andes, in some of the deepest caves (nearly 1 km below the surface), and even in the intertidal zone. Although most scorpions are terrestrial, some are arboreal. Favored habitats include burrows (up to 1 m deep, to escape hot diurnal temperatures), spaces under tree bark, logs, stones, and in rock crevices. Some species adapt well to human environments. Scorpions are often abundant in suitable habitat. Densities of 1 per square meter were reported for the Middle Eastern Leiurus quinquestriatus and of 8-12 per square meter for the intertidal Serradigitus littoralis from Baja California. Given the high densities of scorpions in some areas, their importance in ecological food webs, particularly with respect to helping control insect populations, is considerable. Many are sensitive to environmental degradation and are considered equilibrium species.</p>
+              <p class="read-more">Read more...</p>
+            </li>
+            <li class="col-md-4">
+              <i class="fa fa-moon-o" aria-hidden="true"></i>
+              <h3>Ecology</h3>
+              <p>Scorpions are primarily nocturnal. All fluoresce under long-wave ultraviolet light, facilitating their collection and observation at night. Their simple eyes detect luminosity, but little else. Prey are detected with slit sense organs in the tarsi, sensory setae (trichobothria) on the pedipalps, and the pectines, and attacked with the chelate pedipalps or venomous sting. Scorpions with slender pedipalps are prone to sting their prey, those with robust pedipalps to crush prey mechanically, reserving the sting for large or strong prey. All use the pedipalps to manipulate prey, tearing pieces off with the chelicerae to be digested in a pre-oral cavity before being sucked into the gut. Scorpions are important consumers in some communities. Scorpio maurus was reported to eat an annual average of 11% of the Israeli isopod population, Urodacus yaschenkoi 7.9 kg/ha of invertebrate prey in Australia. Cannibalism and predation by other scorpion species may be the most important sources of scorpion mortality but other invertebrate predators (e.g. centipedes) and vertebrates are also important predators. Mortality is highest immediately after birth, lower for individuals of intermediate age, and high for adults. For example, 65%, 30%, and 60% per year for the Australian Urodacus manicatus. Mortality is particularly high among males due to increased mobility during breeding season and cannibalism by females. Biased adult sex ratios of 1.2-1.4:1 are typical. Social behavior occurs rarely in species of Heterometrus, Opisthacanthus and Pandinus, in which family groups with overlapping generations cooperate to construct and occupy communal burrows, inhabited by individuals of various ages.</p>
+              <p class="read-more">Read more...</p>
+            </li>
+            <li class="col-md-4">
+              <i class="fa fa-book" aria-hidden="true"></i>
+              <h3>Life History</h3>
+              <p>Scorpions have a remarkable life history. Reproduction in scorpions is indirect. Intromission occurs via a spermatophore. The male attaches the spermatophore to the substrate while grasping the female by the pedipalps or chelicerae during a mating dance or "promenade-à-deux". The species-specific spermatophore catapults the sperm mass into the female gonopore when a lever is touched (a lock-and-key mechanism). Scorpions are unusual among arthropods in that all are viviparous-embryos develop in the reproductive tract and receive nourishment from yolk or maternal tissues. Some are parthenogenic. More than most other terrestrial arthropods, scorpions resemble large vertebrates in life history traits and are considered K-selected. They have very low reproductive rates in comparison to other terrestrial arthropods and are among the most long-lived. Gestation times are long (several months to more than a year) and litter sizes often small (1-105). Young are fairly large at birth and altricial, clinging to the mother for the first few molts before dispersing. Time to sexual maturity varying from 2-8 years, depending on the species. Average longevity is around 4 years, but larger species may live 25-30 years. Scorpions do not molt as adults.</p>
+              <p class="read-more">Read more...</p>
+            </li>
+            <li class="col-md-4">
+              <i class="fa fa-leaf" aria-hidden="true"></i>
+              <h3>Conservation</h3>
+              <p>Urgency for the study of any taxonomic group can be argued on the basis of prevailing ignorance about the world's biota. However, scorpions warrant more attention than they receive. As K-selected, equilibrium species, and comprising a major group of predatory arthropods in arid ecosystems, scorpions are valuable bio-indicators. Their disappearance signals habitat degradation and they represent charismatic 'flagship' species for programs aimed at conserving terrestrial invertebrates. Small litter sizes, long generation times and low survivorship among sexually immature females contribute to a low rate of population increase for most scorpions. Many scorpion species are also extremely habitat specific and range-restricted, exacerbating their risk of extinction due to human activities. Increasingly threatened by habitat destruction and harvesting for the souvenir and exotic pet trades, few scorpions receive formal protection and many may disappear before being described. For example, ca. 105,000 live Pandinus imperator are exported annually from three West African countries to pet shops in Europe, the USA and Japan, indicating the magnitude of trade in this particular species, which is now CITES-listed. At least 50 other scorpion species, originating from various African, Asian, and American countries, are offered for sale on the exotic pet market; the most sought after fetch up to $300 each. Few scorpions receive formal protection and many may disappear before being described. The threats faced by many scorpion species renders the task of inventorying their diversity and distribution a priority if steps towards their conservation are to be implemented.</p>
+              <p class="read-more">Read more...</p>
+            </li>
+            <li class="col-md-4">
+              <i class="fa fa-level-down" aria-hidden="true"></i>
+              <h3>Dwindling Expertise</h3>
+              <p>Surprisingly, despite their notoriety, worldwide distribution, medical, ecological and conservation importance, scorpions are poorly studied taxonomically. Many families and genera have never been revised and recent inventories of scorpion diversity-even in regions thought to be well-surveyed for scorpions (e.g. Australia, southern Africa, and the USA) continue to uncover new species and distribution records. Given the paucity of active specialists and an aging demographic, it seems unlikely that the world scorpion fauna will become better known until more scorpion specialists are trained and the prospects for their employment improve. Our group is addressing this problem by coordinating existing expertise in North America to undertake a long overdue revision of the North American scorpion family Vaejovidae, and training new specialists in the process.</p>
+              <p class="read-more">Read more...</p>
+            </li>
+            <li class="col-md-4">
+              <i class="fa fa-bar-chart" aria-hidden="true"></i>
+              <h3>Model System</h3>
+              <p>Scorpions are easy to find in reasonable numbers and thus conducive to the collection of specimens for systematic studies and observational data for ecological studies. Because they belong to an ancient lineage, they are appropriate for studies of the evolutionary process. The similarity in body form between fossil and modern scorpions suggests that their basic habits and habitats may be virtually unchanged since Silurian times. Therefore, knowledge about the ecology of extant scorpions allows us to make assumptions about processes and events that may have caused scorpion speciation in the past. Most extant scorpions have limited dispersal abilities hence their patterns of distribution are amenable to biogeographical analysis.</p>
+              <p class="read-more">Read more...</p>
+            </li>
+          </ul>
+        </article>
+      </div> <!-- bg-light -->
+    </main> <!-- scroll-second -->
 
 <!-- convert below into bootstrap -->
 
-<div class="container">
-<header>
-  <a href="#">
-        <img src="https://res.cloudinary.com/isadora/image/upload/v1512515738/logo-ko-no-tagline_imbdbk.svg" alt="AMNH Arachnology Logo" id="logo-header">
-  </a>
-<!--   <nav>
-    <ul>
-      <li><a href="">People</a></li>
-      <li><a href="">Facilities</a></li>
-      <li><a href="">Collections</a></li>
-      <li><a href="">Fieldwork</a></li>
-      <li><a href="">Publications</a></li>
-      <li><a href="">Resources</a></li>
-      <li><a href="">Contact</a></li>
-    </ul>
-  </nav> -->
-</header>
-<section id="hero">
-  <div id="logo-hero">
-    <img src="https://res.cloudinary.com/isadora/image/upload/v1511710485/logo_color-ko.svg" alt="Logo: AMNH Aracnology Lab">
-  </div>
-</section>
-<article id="why-scorpions" class="narrow line-below">
-  <h1>Why Scorpions?</h1>
-  <p>The Arachnology Lab at the AMNH focuses on the taxonomy, phylogeny and biogeography of scorpions and related arachnid orders. There are many compelling reasons to study these organisms. Scorpions and their kin are ancient, medically important, ecologically, morphologically and taxonomically diverse, and distributed in most terrestrial habitats and elevations on all continents except Antarctica. Scorpions inspire fear and fascination. Many species are threatened yet little is known about their biology, new species remain to be discovered, and there are few experts globally. The world scorpion fauna will remain poorly known until more scorpion specialists are trained and prospects for their employment improve.</p>
-</article>
-  <!-- list/grid of topics with icon, title, and a few lines of text  -->
-  <!-- add animate.css zoomIn to icons? If there are parallax images that will push them down, outside of the browser window on load. if there aren't any parallax images this animation might look bad since the icons are already visible on load -->
-  <!-- on rollover/tap the full topic description appears, layered over section/screen  -->
-<article id="reasons-grid">
-  <ul class="clearfix show-less three-col medium">
-      <li>
-        <i class="fa fa-list-ol" aria-hidden="true"></i>
-        <h3>Diversity</h3>
-        <p>As listed in the Synopsis of Described Scorpions of the World and the Scorpion Files, approximately 2259 extant species in 209 genera and, depending on the authority, between 13 and 20 families (depending on the authority), as well as 92 extinct species in 71 genera and 42 families, are recognized in the arachnid order Scorpiones. This is an almost fourfold increase in the number of species listed a century ago in Kraepelin's (1899) Revision der Skorpione. Although comprising only a small component of arthropod diversity, scorpions are of considerable interest to scientist and layman alike.</p>
-      </li>
-      <li>
-        <i class="fa fa-history" aria-hidden="true"></i>
-        <h3>Antiquity</h3>
-        <p>Scorpions enjoy widespread public appeal (much of it based on fear). Their toxicity, relatively large size and fearsome appearance, notwithstanding the great age of their lineage, contribute to a fascination that has always and continues to surround them. Among the most ancient arthropods, derived from amphibious ancestors that lived in the Silurian, more than 400 million years ago, scorpions have earned the title of 'living fossils'. The scorpion ground plan, developed so long ago, is highly successful. Paleozoic scorpions closely resemble their modern descendants in basic anatomical details, except that some were considerably larger. Brontoscorpio anglicus measured approximately 1 meter in length-an order of magnitude greater than the largest extant Pandinus from tropical Africa, which average about 20 cm. Scorpions were formerly considered the sister group of other arachnids because they closely resemble extinct marine eurypterids (the sister group of arachnids) but recent data suggest that scorpions are embedded in the arachnid lineage, and merely retain primitive features.</p>
-      </li>
-      <li>
-        <i class="fa fa-flag-o" aria-hidden="true"></i>
-        <h3>Notoriety</h3>
-        <p>Scorpions are notorious worldwide. Scorpion venoms contain multiple low molecular weight proteinaceous neurotoxins that block sodium and potassium channels, preventing the transmission of nerve impulses across synapses. In regions where scorpion envenomation represents a significant cause of morbidity and mortality (e.g. Mexico, North Africa and the Middle East), scorpions are justifiably feared. Some 100 000 scorpion stings occur annually in Mexico and as many as 800 people (mostly young children and the elderly) die as a result. The figures may be even higher in North Africa and the Middle East. Nevertheless, most scorpions are harmless. The sting may be painful, but not dangerous. Only about 25 species, all in family Buthidae, are considered medically important worldwide. Most of these occur in the New World genera Centruroides and Tityus, and the Old World genera Androctonus, Buthus, Leiurus, Mesobuthus and Parabuthus. Centruroides exilicauda, from Arizona, California, and New Mexico, is the only species known to be lethal in the U.S.A. The venom of these scorpions has proved fatal to healthy children up to 16 years of age and to adults suffering from hypertension and general debility. </p>
-      </li>
-      <li>
-        <i class="fa fa-globe" aria-hidden="true"></i>
-        <h3>Distribution</h3>
-        <p>Scorpions occur on all continents except Antarctica, but are most abundant and diverse in tropical and subtropical regions. The greatest abundance and diversity of scorpions occurs in desert and semi-desert habitats, but they may also be found in savannas and grasslands, in deciduous, coniferous, and tropical rainforests, on high mountain slopes (above 5500 m elevation) in the Alps, Himalayas and Andes, in some of the deepest caves (nearly 1 km below the surface), and even in the intertidal zone. Although most scorpions are terrestrial, some are arboreal. Favored habitats include burrows (up to 1 m deep, to escape hot diurnal temperatures), spaces under tree bark, logs, stones, and in rock crevices. Some species adapt well to human environments. Scorpions are often abundant in suitable habitat. Densities of 1 per square meter were reported for the Middle Eastern Leiurus quinquestriatus and of 8-12 per square meter for the intertidal Serradigitus littoralis from Baja California. Given the high densities of scorpions in some areas, their importance in ecological food webs, particularly with respect to helping control insect populations, is considerable. Many are sensitive to environmental degradation and are considered equilibrium species.</p>
-      </li>
-      <li>
-        <i class="fa fa-moon-o" aria-hidden="true"></i>
-        <h3>Ecology</h3>
-        <p>Scorpions are primarily nocturnal. All fluoresce under long-wave ultraviolet light, facilitating their collection and observation at night. Their simple eyes detect luminosity, but little else. Prey are detected with slit sense organs in the tarsi, sensory setae (trichobothria) on the pedipalps, and the pectines, and attacked with the chelate pedipalps or venomous sting. Scorpions with slender pedipalps are prone to sting their prey, those with robust pedipalps to crush prey mechanically, reserving the sting for large or strong prey. All use the pedipalps to manipulate prey, tearing pieces off with the chelicerae to be digested in a pre-oral cavity before being sucked into the gut. Scorpions are important consumers in some communities. Scorpio maurus was reported to eat an annual average of 11% of the Israeli isopod population, Urodacus yaschenkoi 7.9 kg/ha of invertebrate prey in Australia. Cannibalism and predation by other scorpion species may be the most important sources of scorpion mortality but other invertebrate predators (e.g. centipedes) and vertebrates are also important predators. Mortality is highest immediately after birth, lower for individuals of intermediate age, and high for adults. For example, 65%, 30%, and 60% per year for the Australian Urodacus manicatus. Mortality is particularly high among males due to increased mobility during breeding season and cannibalism by females. Biased adult sex ratios of 1.2-1.4:1 are typical. Social behavior occurs rarely in species of Heterometrus, Opisthacanthus and Pandinus, in which family groups with overlapping generations cooperate to construct and occupy communal burrows, inhabited by individuals of various ages.</p>
-      </li>
-      <li>
-        <i class="fa fa-book" aria-hidden="true"></i>
-        <h3>Life History</h3>
-        <p>Scorpions have a remarkable life history. Reproduction in scorpions is indirect. Intromission occurs via a spermatophore. The male attaches the spermatophore to the substrate while grasping the female by the pedipalps or chelicerae during a mating dance or "promenade-à-deux". The species-specific spermatophore catapults the sperm mass into the female gonopore when a lever is touched (a lock-and-key mechanism). Scorpions are unusual among arthropods in that all are viviparous-embryos develop in the reproductive tract and receive nourishment from yolk or maternal tissues. Some are parthenogenic. More than most other terrestrial arthropods, scorpions resemble large vertebrates in life history traits and are considered K-selected. They have very low reproductive rates in comparison to other terrestrial arthropods and are among the most long-lived. Gestation times are long (several months to more than a year) and litter sizes often small (1-105). Young are fairly large at birth and altricial, clinging to the mother for the first few molts before dispersing. Time to sexual maturity varying from 2-8 years, depending on the species. Average longevity is around 4 years, but larger species may live 25-30 years. Scorpions do not molt as adults.</p>
-      </li>
-      <li>
-        <i class="fa fa-leaf" aria-hidden="true"></i>
-        <h3>Conservation</h3>
-        <p>Urgency for the study of any taxonomic group can be argued on the basis of prevailing ignorance about the world's biota. However, scorpions warrant more attention than they receive. As K-selected, equilibrium species, and comprising a major group of predatory arthropods in arid ecosystems, scorpions are valuable bio-indicators. Their disappearance signals habitat degradation and they represent charismatic 'flagship' species for programs aimed at conserving terrestrial invertebrates. Small litter sizes, long generation times and low survivorship among sexually immature females contribute to a low rate of population increase for most scorpions. Many scorpion species are also extremely habitat specific and range-restricted, exacerbating their risk of extinction due to human activities. Increasingly threatened by habitat destruction and harvesting for the souvenir and exotic pet trades, few scorpions receive formal protection and many may disappear before being described. For example, ca. 105,000 live Pandinus imperator are exported annually from three West African countries to pet shops in Europe, the USA and Japan, indicating the magnitude of trade in this particular species, which is now CITES-listed. At least 50 other scorpion species, originating from various African, Asian, and American countries, are offered for sale on the exotic pet market; the most sought after fetch up to $300 each. Few scorpions receive formal protection and many may disappear before being described. The threats faced by many scorpion species renders the task of inventorying their diversity and distribution a priority if steps towards their conservation are to be implemented.</p>
-      </li>
-      <li>
-        <i class="fa fa-level-down" aria-hidden="true"></i>
-        <h3>Dwindling Expertise</h3>
-        <p>Surprisingly, despite their notoriety, worldwide distribution, medical, ecological and conservation importance, scorpions are poorly studied taxonomically. Many families and genera have never been revised and recent inventories of scorpion diversity-even in regions thought to be well-surveyed for scorpions (e.g. Australia, southern Africa, and the USA) continue to uncover new species and distribution records. Given the paucity of active specialists and an aging demographic, it seems unlikely that the world scorpion fauna will become better known until more scorpion specialists are trained and the prospects for their employment improve. Our group is addressing this problem by coordinating existing expertise in North America to undertake a long overdue revision of the North American scorpion family Vaejovidae, and training new specialists in the process.</p>
-      </li>
-      <li>
-        <i class="fa fa-bar-chart" aria-hidden="true"></i>
-        <h3>Model System</h3>
-        <p>Scorpions are easy to find in reasonable numbers and thus conducive to the collection of specimens for systematic studies and observational data for ecological studies. Because they belong to an ancient lineage, they are appropriate for studies of the evolutionary process. The similarity in body form between fossil and modern scorpions suggests that their basic habits and habitats may be virtually unchanged since Silurian times. Therefore, knowledge about the ecology of extant scorpions allows us to make assumptions about processes and events that may have caused scorpion speciation in the past. Most extant scorpions have limited dispersal abilities hence their patterns of distribution are amenable to biogeographical analysis.</p>
-      </li>
-    </ul>
-</article>
 <section class="shaded">
+
 <aside id="related-projects">
   <h2>Related Projects</h2>
 <!-- jquery .animate right to left so they all slide into place from the right side on scroll -->
@@ -263,18 +267,17 @@ New York, NY 10024</p>
     </p>
   </section>
 </footer>
-  </div> <!-- container -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
     
   </body>
 </html>
-
-
 
 
 
