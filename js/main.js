@@ -4,11 +4,10 @@
 // on scroll, remove class .invisible and add class .visible to .navbar-brand img, transition .5s
 // ^before writing this, add .invisible class to .navbar-brand img in html
 
-//delay scroll of .scroll-second until #logo-header reaches top of screen
+// delay scroll of .scroll-second until #logo-header reaches top of screen
 // ^this will allow for the temporary reveal of the #homepage-header background image
 
-// on scroll of "Why Scorpions?" section reaching top of screen, change background url of #homepage-header so a new image displays in between #reasons-grid and #related-projects
-
+//v It would be better if there were a way to balance ragged lines, but this is good enough for now
 // No-Break
 // copied from https://jsfiddle.net/jackvial/19e3pm6e/2/
 function noMoreLonelyWords(selector, numWords){

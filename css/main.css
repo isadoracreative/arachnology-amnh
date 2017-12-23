@@ -2,7 +2,7 @@
 /* Website visual design and front-end development by Isadora Williams, copyright 2018 */
 
 /* Typekit fonts need @import to show up in codepen */
-/*@import url("https://use.typekit.net/upo7xbg.css");*/
+@import url("https://use.typekit.net/upo7xbg.css");
 
 body {
   font-family: "proxima-nova", sans-serif;
@@ -13,6 +13,14 @@ body {
 .bg-trans {
   background-color: rgba(0,0,0,0);
 }
+/* .line-below:after {
+  border-bottom: 3px solid lightgray;
+  content:"";
+  display:block;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+  width: 25%;
+} */
 .navbar-brand img {
   margin-top: -5px;
   width: 240px;
@@ -37,33 +45,33 @@ body {
 #logo-header {
   max-width: 700px;
 }
+.text-info {
+  color: #007ca0 !important;
+}
 h1, h2 {
-  color: #007ca0;
   font-family: 'atrament', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   margin-bottom: 20px;
 }
 h3 {
-  color: #c9242b;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h4 {
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
 }
-.line-below:after {
-  border-bottom: 3px solid lightgray;
-  content:"";
-  display:block;
-  padding-top: 1rem;
-  margin-bottom: 2rem;
-  width: 25%;
+.bg-info {
+  background-color: #007ca0 !important;
 }
 #reasons-grid ul,  #reasons-grid li{
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
 }
-i.fa {
-  color: #c9242b;
+#reasons-grid i.fa {
   font-size: 2.5rem;
   padding: 10px;
 }
@@ -73,10 +81,50 @@ ul.show-less li p {
   overflow: hidden;
 }
 ul.show-less li p.read-more {
-  color: #007ca0;
   height: 1rem;
-  margin: -.5rem 0 0;
+  margin: -.8rem 0 0;
   text-align: right;
+}
+#related-projects div.card {
+  border-top: 8px solid #007ca0;
+}
+#related-projects div.card-body {
+  height: 15rem;
+}
+#related-projects div.card-title-bg {
+  background-color: rgba(0,0,0,.5);
+}
+.card {
+  display: inline;
+}
+.card-text {
+  line-height: 1.3rem;
+}
+.card-text::after {
+  content: "\f0a9";
+  font-family: FontAwesome;
+  font-size: .9rem;
+  padding-left: 6px;
+}
+#card-south-african {
+  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512657583/south-african-arachnid-biodiversity-60170.Capturing-a-burrowing-scorpion_roky3p.jpg);
+  background-size: cover;
+}
+#card-karoo-biogaps {
+  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512658065/Lorenzo_2BPrendini_2Bdigging_2Bscorpion_2Bburrow_d3clhk.jpg);
+  background-size: cover;
+}
+#card-western-cape {
+  background-image: url(https://res.cloudinary.com/isadora/image/upload/e_improve/v1512657671/939dd004b48f57133b2a1d6d4cb4e425_e5peeh.jpg);
+  background-size: cover;
+}
+#card-vaejovidae {
+  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512656215/Fixing-scorpions_ryvw2e.jpg);
+  background-size: cover;
+}
+#card-solifugae {
+  background-image: url(https://res.cloudinary.com/isadora/image/upload/c_crop/v1512656718/solifugae-G-fumi-in-jar-corrected_rqb6dr.jpg);
+  background-size: cover;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -119,9 +167,12 @@ ul.show-less li p.read-more {
   }
 }
 
-/* convert below to bootstrap */
 
-/** {
+/* convert this to bootstrap */
+
+/* Styles for AMNH scorpions website */
+/* Website visual design and front-end development by Isadora Williams, copyright 2018 */
+* {
   box-sizing: border-box;
 }
 .clearfix::after {
@@ -129,11 +180,8 @@ ul.show-less li p.read-more {
     display:block;
     clear:both;
   }
-body {
-  font-family: "proxima-nova", sans-serif;
-  padding-top: 100px;
-}
-a {
+
+/* a {
   text-decoration: none;
 }
 a:link {
@@ -147,8 +195,26 @@ a:hover {
 }
 a:active {
   color: #c9242b;
+} */
+
+.narrow {
+  margin: 40px auto;
+  width: 600px;
+  max-width: 90%;
 }
-header {
+.medium {
+  margin: 40px auto;
+  width: 960px;
+  max-width: 90%;
+}
+.wide {
+  margin: 40px auto;
+  width: 1200px;
+  max-width: 90%;
+}
+
+/* header animation */
+/* header {
   background-color: rgba(0,0,0,0);
   height: 100px;
   position: fixed;
@@ -201,210 +267,57 @@ header.header-offset nav li {
   line-height: 4;
   padding-right: 20px;
   transition: all 1s;
-}
-main {
-  margin-top: -200px;
-}
-#hero {
-  background: url(https://res.cloudinary.com/isadora/image/upload/e_auto_contrast/v1512864623/scorpions/Emperor_Scorpion_Under_UV_Light.jpg) no-repeat fixed;
-  background-position: center -230px;
-  background-size: cover;
-  height: 1000px;
-  padding-top: 300px;
-  width: 100%;
-}
-#logo-hero {
-  background-color: rgba(0,0,0,.8);
-  height: 300px;
-  text-align: center;
-}
-#logo-hero img{
-  height: 180px;
-  margin: 50px 0 80px -20px;
-  width: 80%;
-}
-h1, h2 {
-  color: #007ca0;
-  font-family: 'atrament', sans-serif;
-  font-size: 48px;
-  margin: 40px 0 15px;
-  text-align: center;
-}
-p {
-  font-size: 16px;
-  line-height: 1.4;
-  padding-bottom: 10px;
-}
-.narrow {
-  margin: 40px auto;
-  width: 600px;
-  max-width: 90%;
-}
-.medium {
-  margin: 40px auto;
-  width: 960px;
-  max-width: 90%;
-}
-.wide {
-  margin: 40px auto;
-  width: 1200px;
-  max-width: 90%;
-}
-.line-below::after {
-  border-bottom: 3px solid lightgray;
-  content:"";
-  display:block;
-  padding-bottom: 20px;
-  margin: 0 auto 20px;
-  width: 25%;
-}
-.line-above::before {
-  border-bottom: 3px solid lightgray;
-  content:"";
-  display:block;
-  padding-bottom: 20px;
-  margin: 0 auto 20px;
-  width: 25%;
-}
-.three-col li {
-  text-align: center;
-  float: left;
-  margin: 0 30px;
-  width: calc((100% / 3) - 60px);
-}
-i.fa {
-  color: #c9242b;
-  font-size: 50px;
-  padding: 10px;
-}
-h3 {
-  color: #c9242b;
-  font-size: 15px;
-  font-weight: bold;
-  margin-bottom: 7px;
-  padding-top: 5px;
-  text-transform: uppercase;
-}
-ul.show-less li p {
-  font-size: 14px;
-  height:3.9em;
-  line-height:1.3em;
-  margin-bottom: 20px;
-  overflow:hidden;
-}*/
+} */
+
 /* js: on hover, the full text of each <li> will appear above the <ul>. */
 /* Maybe I need to do this with js. I'm trying to have a "...more" appear after or below the third line. */
 /* use js hide/show with a separate <p> for "...more" */
 /* or use slideToggle with one button inject html to change toggle text of button to "more" or "less" */
-/*ul.show-less li p::after {
-    content:"...more";
-}
-section.shaded {
-  background-color: rgba(0,0,0,.04);
-}
-#related-projects {
+
+/* #related-projects {
   padding: 10px;
 }
-.five-col li {
+#related-projects ul {
+  list-style-type: none;
+} */
+/* .five-col li {
   text-align: center;
   float: left;
   margin: 0 10px;
   width: calc((100% / 5) - 20px);
-}
-div.tile {
-  background-color: #fff;
-  border-top: 8px solid #007ca0;
-  box-shadow: 0 4px 8px rgba(0,0,0,.2);
-  height: 200px;
-  margin: 10px 0;
-  position: relative;
-}
-h4 {
+} */
+/* h4 {
   font-size: 14px;
   font-weight: bold;
   line-height: 1.3;
   text-transform: uppercase;
-}
-h4.tile-title {
-  background-color: rgba(0,0,0,.5);
-  color: white;
-  height: 57px;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  text-align: left;
-  width: 100%;
-}*/
-/* description with the arrow before */
-/* p.tile-description {
-  line-height: 1.3;
-  padding: 0 5px 0 23px;
-  text-align: left;
-}
-p.tile-description::before {
-  content: "\f0a9";
-  font-family: FontAwesome;
-  font-size: 17px;
-  margin-left: -23px;
-  padding-right: 8px;
 } */
-/*p.tile-description {
-  font-size: 15px;
-  line-height: 1.3;
-  padding: 0 5px 0 2px;
-  text-align: left;
-}
-p.tile-description::after {
-  color: #007ca0;
-  content: "\f0a9";
-  font-family: FontAwesome;
-  font-size: 15px;
-  line-height: 1.1;
-  padding-left: 6px;
-}
-#tile-south-african {
-  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512657583/south-african-arachnid-biodiversity-60170.Capturing-a-burrowing-scorpion_roky3p.jpg);
-  background-size: cover;
-}
-#tile-karoo-biogaps {
-  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512658065/Lorenzo_2BPrendini_2Bdigging_2Bscorpion_2Bburrow_d3clhk.jpg);
-  background-size: cover;
-}
-#tile-western-cape {
-  background-image: url(https://res.cloudinary.com/isadora/image/upload/e_improve/v1512657671/939dd004b48f57133b2a1d6d4cb4e425_e5peeh.jpg);
-  background-size: cover;
-}
-#tile-vaejovidae {
-  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512656215/Fixing-scorpions_ryvw2e.jpg);
-  background-size: cover;
-}
-#tile-solifugae {
-  background-image: url(https://res.cloudinary.com/isadora/image/upload/c_crop/v1512656718/solifugae-G-fumi-in-jar-corrected_rqb6dr.jpg);
-  background-size: cover;
-}
 footer {
   background-color: #222;
 }
-#footer-menu {
+footer ul {
+  list-style-type: none;
+}
+footer #footer-menu {
   padding: 40px 10px;
   margin: 0 auto;
 }
-#footer-menu .submenu {
+footer #footer-menu .submenu {
   float: left;
   margin: 0 10px;
   width: calc((100% / 6) - 22px);
 }
-#footer-menu #connect-footer {
+footer #footer-menu #connect-footer {
   margin-right: 20px;
   padding-right: 20px;
 }
-#logo-icon-footer {
+footer #logo-icon-footer {
   max-width: 90px;
   opacity: .9;
   margin-bottom: 10px;
   padding-top: 18px;
 }
-#contact-footer p {
+footer #contact-footer p {
   color: #bbb;
   font-size: 13px;
   line-height: 1.5;
@@ -415,21 +328,21 @@ footer i.fa {
   font-size: 20px;
   padding: 5px;
 }
-div#logo-amnh {
+footer div#logo-amnh {
   border-top: 1px solid #ccc;
   margin-top: 15px;
   padding-top: 15px;
 }
-#logo-amnh-footer {
+footer #logo-amnh-footer {
   max-width: 160px;
   opacity: .9;
   width: 100%;
 }
-#site-map {
+footer #site-map {
   color: #ccc;
   font-size: 14px;
 }
-#site-map p.page-title {
+footer #site-map p.page-title {
   color: white;
   font-family: 'atrament', sans-serif;
   font-size: 24px;
@@ -437,9 +350,11 @@ div#logo-amnh {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-#footer-menu .submenu li {
+footer #footer-menu .submenu li {
   line-height: 1.4;
   padding-bottom: 8px;
+  margin-left: -40px;
+  padding-left: 0;
 }
 #copyright p {
   background-color: black;
@@ -460,4 +375,4 @@ div#logo-amnh {
 }
 #copyright a:active {
   color: #007ca0;
-}*/
+}
