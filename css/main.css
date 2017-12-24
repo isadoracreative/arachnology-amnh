@@ -45,6 +45,19 @@ body {
 #logo-header {
   max-width: 700px;
 }
+a:link {
+  color: #007ca0;
+}
+a:visited {
+  color: #007ca0;
+}
+a:hover {
+  color: #17a2b8;
+  text-decoration: none;
+}
+a:active {
+  color: #c9242b;
+}
 .text-info {
   color: #007ca0 !important;
 }
@@ -126,6 +139,70 @@ ul.show-less li p.read-more {
   background-image: url(https://res.cloudinary.com/isadora/image/upload/c_crop/v1512656718/solifugae-G-fumi-in-jar-corrected_rqb6dr.jpg);
   background-size: cover;
 }
+footer {
+  background-color: #222;
+}
+footer #footer-contact {
+/*   max-width: 160px; */
+/*   margin-left: -1px; */
+}
+footer #logo-icon-footer {
+  max-width: 90px;
+  opacity: .9;
+  margin-bottom: 10px;
+/*   padding-top: 18px; */
+}
+footer #footer-address p {
+  color: #bbb;
+  font-size: .8rem;
+  line-height: 1.5;
+  margin-bottom: 7px;
+  padding-right: 10px;
+}
+footer i.fa {
+  color: #ccc;
+  font-size: 1.2rem;
+  padding: 5px 10px 5px 0;
+}
+footer div#logo-amnh::before {
+  border-top: 1px solid #ccc;
+  content: "";
+  display: block;
+  margin: 0 0 15px 5px;
+  max-width: 160px;
+}
+footer div#logo-amnh {
+  margin: 0 0 5px -5px;
+  padding-top: 15px;
+}
+footer #logo-amnh-footer {
+  max-width: 160px;
+  opacity: .9;
+  width: 100%;
+}
+footer #site-map {
+  color: #ccc;
+  font-size: .9rem;
+  line-height: 1.3rem;
+  padding-top: 30px;
+}
+footer ul {
+  list-style-type: none;
+/*   margin-left: 0; */
+  padding-left: 0;
+}
+footer #site-map p.page-title {
+  color: white;
+  font-family: 'atrament', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: .9rem;
+  padding-top: .5rem;
+}
+footer #site-map ul li {
+  margin-bottom: .4rem;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -169,49 +246,6 @@ ul.show-less li p.read-more {
 
 
 /* convert this to bootstrap */
-
-/* Styles for AMNH scorpions website */
-/* Website visual design and front-end development by Isadora Williams, copyright 2018 */
-* {
-  box-sizing: border-box;
-}
-.clearfix::after {
-    content:"";
-    display:block;
-    clear:both;
-  }
-
-/* a {
-  text-decoration: none;
-}
-a:link {
-  color: #007ca0;
-}
-a:visited {
-  color: #007ca0;
-}
-a:hover {
-  color: #6DCFF6;
-}
-a:active {
-  color: #c9242b;
-} */
-
-.narrow {
-  margin: 40px auto;
-  width: 600px;
-  max-width: 90%;
-}
-.medium {
-  margin: 40px auto;
-  width: 960px;
-  max-width: 90%;
-}
-.wide {
-  margin: 40px auto;
-  width: 1200px;
-  max-width: 90%;
-}
 
 /* header animation */
 /* header {
@@ -269,93 +303,6 @@ header.header-offset nav li {
   transition: all 1s;
 } */
 
-/* js: on hover, the full text of each <li> will appear above the <ul>. */
-/* Maybe I need to do this with js. I'm trying to have a "...more" appear after or below the third line. */
-/* use js hide/show with a separate <p> for "...more" */
-/* or use slideToggle with one button inject html to change toggle text of button to "more" or "less" */
-
-/* #related-projects {
-  padding: 10px;
-}
-#related-projects ul {
-  list-style-type: none;
-} */
-/* .five-col li {
-  text-align: center;
-  float: left;
-  margin: 0 10px;
-  width: calc((100% / 5) - 20px);
-} */
-/* h4 {
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1.3;
-  text-transform: uppercase;
-} */
-footer {
-  background-color: #222;
-}
-footer ul {
-  list-style-type: none;
-}
-footer #footer-menu {
-  padding: 40px 10px;
-  margin: 0 auto;
-}
-footer #footer-menu .submenu {
-  float: left;
-  margin: 0 10px;
-  width: calc((100% / 6) - 22px);
-}
-footer #footer-menu #connect-footer {
-  margin-right: 20px;
-  padding-right: 20px;
-}
-footer #logo-icon-footer {
-  max-width: 90px;
-  opacity: .9;
-  margin-bottom: 10px;
-  padding-top: 18px;
-}
-footer #contact-footer p {
-  color: #bbb;
-  font-size: 13px;
-  line-height: 1.5;
-  padding-bottom: 4px;
-}
-footer i.fa {
-  color: #ccc;
-  font-size: 20px;
-  padding: 5px;
-}
-footer div#logo-amnh {
-  border-top: 1px solid #ccc;
-  margin-top: 15px;
-  padding-top: 15px;
-}
-footer #logo-amnh-footer {
-  max-width: 160px;
-  opacity: .9;
-  width: 100%;
-}
-footer #site-map {
-  color: #ccc;
-  font-size: 14px;
-}
-footer #site-map p.page-title {
-  color: white;
-  font-family: 'atrament', sans-serif;
-  font-size: 24px;
-  padding: 15px 0 5px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-footer #footer-menu .submenu li {
-  line-height: 1.4;
-  padding-bottom: 8px;
-  margin-left: -40px;
-  padding-left: 0;
-}
 #copyright p {
   background-color: black;
   color: #ccc;

@@ -1,3 +1,6 @@
+/* Script for AMNH scorpions website */
+/* Website visual design and front-end development by Isadora Williams, copyright 2018 */
+
 // on scroll, remove class .bg-trans from #nav-header and add class .bg-dark, transition .5s
 // ^before writing this, add class .bg-trans and remove class .bg-dark to #nav-header in html
 
@@ -7,7 +10,6 @@
 // delay scroll of .scroll-second until #logo-header reaches top of screen
 // ^this will allow for the temporary reveal of the #homepage-header background image
 
-//v It would be better if there were a way to balance ragged lines, but this is good enough for now
 // No-Break
 // copied from https://jsfiddle.net/jackvial/19e3pm6e/2/
 function noMoreLonelyWords(selector, numWords){
@@ -26,9 +28,6 @@ function noMoreLonelyWords(selector, numWords){
 }
   // Goodbye lonely words
   noMoreLonelyWords("p", 2);
-
-
-
 
 
 // nav and header animation before converting to bootstrap
@@ -57,17 +56,17 @@ function noMoreLonelyWords(selector, numWords){
 
 // USERFLOW for #reasons-grid entrance
 
-// user scrolls past previous article
-// icons within #reasons-grid .animate with zoomIn one row at a time
+// user scrolls past initial view
+// cards slide in right to left
 
 
-// PSEUDOCODE for #reasons-grid
+// PSEUDOCODE for #reasons-grid entrance
 
-// grab #reasons-grid i.fa
-// assign variable to 50% of height of viewport
-// use scrollTop to return the position of #reasons-grid i.fa
-// if #reasons-grid i.fa has scrolled past 50% height of viewport, .animate with zoomIn
-// else if #reasons-grid i.fa has not scrolled past 50% height of viewport, don't execute <-is that necessary? maybe there's a better way to write this
+// create .hide class with margin-left: 100%; and transition: all 0.5s;
+// addClass .hide on page load
+// get height of browser window
+// listen for scroll past that height
+// removeClass .hide
 
 
 // USERFLOW for #reasons-grid interactiion
@@ -98,10 +97,18 @@ function noMoreLonelyWords(selector, numWords){
 
 // PSEUDOCODE for #related-projects
 
+// jquery .animate right to left so they all slide into place from the right side on scroll
+
+
+// USERFLOW for #related-projects
+
+// user hovers over tile
+// background image grows within the div
+
+
+// PSEUDOCODE for #related-projects
+
 // grab #related-projects div.tile
 // attach hover event to #related-projects div.tile
 // instruct handlerIn to increase the background-size to 150%
 // instruct handlerOut to return the background-size to cover
-
-
-
