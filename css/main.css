@@ -6,6 +6,8 @@
 
 body {
   font-family: "proxima-nova", sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
 }
 .bg-dark {
   background-color: rgba(0,0,0,.8) !important;
@@ -62,10 +64,10 @@ a:active {
   color: #007ca0 !important;
 }
 h1, h2 {
-  font-family: "atrament", sans-serif !important;
+  font-family: "atrament-web", sans-serif !important;
   font-size: 2.7rem;
-  font-style: regular;
-  font-weight: regular;
+  font-style: normal;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 h3 {
@@ -195,10 +197,10 @@ footer ul {
 }
 footer #site-map p.page-title {
   color: white;
-  font-family: "atrament", sans-serif !important;
+  font-family: "atrament-web", sans-serif !important;
   font-size: 1.5rem;
-  font-style: regular;
-  font-weight: regular;
+  font-style: normal;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: .9rem;
