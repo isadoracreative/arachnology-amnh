@@ -12,6 +12,9 @@ body {
 .bg-dark {
   background-color: rgba(0,0,0,.8) !important;
 }
+.bg-light {
+  background-color: #f6f7f8 !important;
+}
 .bg-trans {
   background-color: rgba(0,0,0,0);
 }
@@ -25,7 +28,7 @@ body {
 } */
 .navbar-brand img {
   margin-top: -5px;
-  width: 240px;
+  width: 200px;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: white;
@@ -64,7 +67,7 @@ a:active {
   color: #007ca0 !important;
 }
 h1, h2 {
-  font-family: "atrament-web", sans-serif;
+  font-family: "atrament-web", Impact, Tahoma, Helvetica, Arial, sans-serif;
   font-size: 2.7rem;
   font-style: normal;
   font-weight: 400;
@@ -197,14 +200,14 @@ footer ul {
 }
 footer #site-map p.page-title {
   color: white;
-  font-family: "atrament-web", sans-serif;
+  font-family: "atrament-web", Impact, Tahoma, Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: .9rem;
-  padding-top: .5rem;
+  padding-top: .3rem;
 }
 footer #site-map ul li {
   margin-bottom: .4rem;
@@ -214,6 +217,10 @@ footer #site-map ul li {
 @media (min-width: 576px) {
   #homepage-header {
     background-position: 0px -50px;
+  }
+  .navbar-brand img {
+  margin-top: -5px;
+  width: 240px;
   }
 }
 /* Medium devices (tablets, 768px and up) */
