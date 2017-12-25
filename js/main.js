@@ -1,7 +1,7 @@
 /* Script for AMNH scorpions website */
 /* Website visual design and front-end development by Isadora Williams, copyright 2018 */
 
-// typekit fonts
+// asynchronous loading of typekit fonts
   (function(d) {
     var config = {
       kitId: 'upo7xbg',
