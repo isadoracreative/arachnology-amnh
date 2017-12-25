@@ -1,8 +1,8 @@
 /* Styles for AMNH scorpions website */
 /* Website visual design and front-end development by Isadora Williams, copyright 2018 */
 
-/* Typekit fonts need @import to show up in codepen */
-/*@import url("https://use.typekit.net/upo7xbg.css");*/
+/* Typekit fonts need @import to show up in codepen and some browsers */
+@import url("https://use.typekit.net/upo7xbg.css");
 
 body {
   font-family: "proxima-nova", sans-serif !important;
