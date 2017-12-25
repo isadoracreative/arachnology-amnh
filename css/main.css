@@ -5,7 +5,7 @@
 @import url("https://use.typekit.net/upo7xbg.css");
 
 body {
-  font-family: "proxima-nova", sans-serif !important;
+  font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -64,7 +64,7 @@ a:active {
   color: #007ca0 !important;
 }
 h1, h2 {
-  font-family: "atrament-web", sans-serif !important;
+  font-family: "atrament-web", sans-serif;
   font-size: 2.7rem;
   font-style: normal;
   font-weight: 400;
@@ -197,7 +197,7 @@ footer ul {
 }
 footer #site-map p.page-title {
   color: white;
-  font-family: "atrament-web", sans-serif !important;
+  font-family: "atrament-web", sans-serif;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
