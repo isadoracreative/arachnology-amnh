@@ -62,7 +62,7 @@ a:active {
   color: #007ca0 !important;
 }
 h1, h2 {
-  font-family: 'atrament', sans-serif !important;
+  font-family: "atrament", sans-serif !important;
   font-size: 2.7rem;
   margin-bottom: 20px;
 }
@@ -193,7 +193,7 @@ footer ul {
 }
 footer #site-map p.page-title {
   color: white;
-  font-family: 'atrament', sans-serif !important;
+  font-family: "atrament", sans-serif !important;
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
