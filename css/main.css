@@ -64,6 +64,8 @@ a:active {
 h1, h2 {
   font-family: "atrament", sans-serif !important;
   font-size: 2.7rem;
+  font-style: regular;
+  font-weight: regular;
   margin-bottom: 20px;
 }
 h3 {
@@ -195,6 +197,8 @@ footer #site-map p.page-title {
   color: white;
   font-family: "atrament", sans-serif !important;
   font-size: 1.5rem;
+  font-style: regular;
+  font-weight: regular;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: .9rem;
