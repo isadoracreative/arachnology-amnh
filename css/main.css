@@ -50,10 +50,7 @@ body {
 #logo-header {
   max-width: 700px;
 }
-a:link {
-  color: #007ca0;
-}
-a:visited {
+a:link, a:visited {
   color: #007ca0;
 }
 a:hover {
@@ -62,6 +59,10 @@ a:hover {
 }
 a:active {
   color: #c9242b;
+}
+:focus, :active, button:focus, button:active {
+   outline: none;
+   box-shadow: none;
 }
 .text-info {
   color: #007ca0 !important;
@@ -95,7 +96,12 @@ h4 {
   font-size: 2.5rem;
   padding: 10px;
 }
+#reasonsModal .modal-footer i.fa {
+  font-size: 1rem;
+  padding: 2px;
+  }
 ul.show-less li p {
+  color: black;
   height: 5rem;
   line-height: 1.3rem;
   overflow: hidden;
@@ -106,6 +112,7 @@ ul.show-less li p.read-more {
   text-align: right;
 }
 #related-projects div.card {
+  border: 1px solid #868e96;
   border-top: 8px solid #007ca0;
 }
 #related-projects div.card-body {
@@ -149,15 +156,13 @@ ul.show-less li p.read-more {
 footer {
   background-color: #222;
 }
-footer #footer-contact {
-/*   max-width: 160px; */
-/*   margin-left: -1px; */
+footer a:hover {
+  color: white;
 }
 footer #logo-icon-footer {
   max-width: 90px;
   opacity: .9;
   margin-bottom: 10px;
-/*   padding-top: 18px; */
 }
 footer #footer-address p {
   color: #bbb;
@@ -195,7 +200,6 @@ footer #site-map {
 }
 footer ul {
   list-style-type: none;
-/*   margin-left: 0; */
   padding-left: 0;
 }
 footer #site-map p.page-title {
@@ -221,6 +225,10 @@ footer #site-map ul li {
   .navbar-brand img {
   margin-top: -5px;
   width: 240px;
+  }
+  #reasonsModal .modal-footer i.fa {
+  font-size: 1.5rem;
+  padding: 8px;
   }
 }
 /* Medium devices (tablets, 768px and up) */

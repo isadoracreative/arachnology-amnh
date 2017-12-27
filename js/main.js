@@ -10,26 +10,6 @@
 // delay scroll of .scroll-second until #logo-header reaches top of screen
 // ^this will allow for the temporary reveal of the #homepage-header background image
 
-// No-Break
-// copied from https://jsfiddle.net/jackvial/19e3pm6e/2/
-function noMoreLonelyWords(selector, numWords){
-  // Get array of all the selected elements
-  var elems = document.querySelectorAll(selector);
-  var i;
-  for(i = 0; i < elems.length; ++i){
-  // Split the text content of each element into an array
-    var textArray = elems[i].innerText.split(" ");
-  // Remove the last n words and join them with a non-breaking space
-    var lastWords = textArray.splice(-numWords, numWords).join("&nbsp;");
-  // Join it all back together and replace the existing text with the new text
-    var textMinusLastWords = textArray.join(" ");
-    elems[i].innerHTML = textMinusLastWords + " " +  lastWords;
-  }
-}
-  // Goodbye lonely words
-  noMoreLonelyWords("p", 2);
-
-
 // nav and header animation before converting to bootstrap
 // $(window).scroll(function () {
 //     let offset = $(window).scrollTop();
@@ -71,22 +51,31 @@ function noMoreLonelyWords(selector, numWords){
 
 // USERFLOW for #reasons-grid interactiion
 
-// full #reasons-grid p hidden
-// user hovers over or taps #reasons-grid li
-// show #reasons-grid p as styled to popover rest of content
-// user hovers off or taps off #reasons-grid li
-// return to full #reasons-grid p hidden
+// user clicks on an <a> within the #reasons-grid
+// modal dialog displays full content of <a>
 
+// SCRIPT for #reasons-grid interaction
 
-// PSEUDOCODE for #reasons-grid interactiion
+// get modal content <a>
+// listen for show.bs.modal
+$('#reasonsModal').on('show.bs.modal', function (event) {
+  // get <a> that triggered the modal
+  let button = $(event.relatedTarget)
+  // get html from <a>
+  let content = button.html()
+  // target modal
+  let modal = $(this)
+  // put html from <a> into modal
+  modal.find('.modal-body').html(content)
+  // remove p.read-more within modal
+  modal.find('p.read-more').remove()
+})
 
-// grab #reasons-grid li
-// grab identity of li (eg. #diversity or #antiquity)
-// listen for hover or tap on #reasons-grid li with that id
-// add a class to #reasons-grid li with that id that styles the li, h3, and p as a popover
-// listen for hover off #reasons-grid
-// listen for tap outside of #reasons-grid <-is "tapping outside" a real thing? more research required
-// remove the above class from all #reasons-grid li's
+// USERFLOW for #reasonsModal interaction
+// user clicks one of icons at bottom of modal dialog
+// content from corresponding #reasons-grid li loads in modal
+
+// PSEUDOCODE for #reasonsModal interaction
 
 
 // USERFLOW for #related-projects
