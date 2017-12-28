@@ -15,17 +15,24 @@ body {
 .bg-light {
   background-color: #f6f7f8 !important;
 }
+.bg-info {
+  background-color: #007ca0 !important;
+}
 .bg-trans {
   background-color: rgba(0,0,0,0);
 }
-/* .line-below:after {
-  border-bottom: 3px solid lightgray;
+/* container for showing background images on scroll, add'l js needed */
+.show-bg {
+  height: 300px;
+}
+.line-below:after {
+  border-bottom: 5px solid rgba(255,255,255,.5);
   content:"";
   display:block;
-  padding-top: 1rem;
-  margin-bottom: 2rem;
-  width: 25%;
-} */
+  padding-top: 1.1rem;
+  margin-bottom: 1rem;
+  width: 5rem;
+}
 .navbar-brand img {
   margin-top: -5px;
   width: 200px;
@@ -35,14 +42,15 @@ body {
   font-size: .9rem;
 }
 .jumbotron {
-  height: 380px;
+/*   height: 380px; */
+  height: 100vh;
   margin: 0;
   padding: 0;
   background-color: #000;
   z-index: -2;
 }
 #homepage-header {
-  background: #000 url(https://res.cloudinary.com/isadora/image/upload/e_auto_contrast/v1512864623/scorpions/Emperor_Scorpion_Under_UV_Light.jpg) no-repeat -100px -50px fixed;
+  background: #000 url(https://isadora3.github.io/amnh-scorpions/images/Emperor_Scorpion_Under_UV_Light-contrast.jpg) no-repeat -100px -50px fixed;
   background-size: auto 450px;
   height: 380px;
   z-index: -1;
@@ -69,7 +77,7 @@ a:active {
 }
 h1, h2 {
   font-family: "atrament-web", Impact, Tahoma, Helvetica, Arial, sans-serif;
-  font-size: 2.7rem;
+  font-size: 2.9rem;
   font-style: normal;
   font-weight: 400;
   margin-bottom: 20px;
@@ -80,10 +88,24 @@ h3 {
   text-transform: uppercase;
 }
 h4 {
+  font-size: 1.25rem;
+}
+h5 {
   font-size: 1.1rem;
 }
-.bg-info {
-  background-color: #007ca0 !important;
+.center-in-parent {
+  /*  add class position-relative to parent  */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#quicklinks img {
+  margin: 10px auto;
+  transition: all .7s ease;
+}
+#quicklinks img:hover {
+  margin: 0px auto;
 }
 #reasons-grid ul,  #reasons-grid li{
   list-style-type: none;
@@ -126,13 +148,13 @@ ul.show-less li p.read-more {
 #related-projects div.card-body {
   background-size: cover;
   height: 15rem;
-  -webkit-filter: saturate(70%);
-  filter: saturate(70%);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
   transition: all .7s ease;
 }
 #related-projects div.card-body:hover {
-  -webkit-filter: saturate(120%);
-  filter: saturate(120%);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 #related-projects .card-title-bg {
   background-color: rgba(0,0,0,.3);
@@ -144,19 +166,19 @@ ul.show-less li p.read-more {
   padding-left: 6px;
 }
 #card-south-african {
-  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512657583/south-african-arachnid-biodiversity-60170.Capturing-a-burrowing-scorpion_roky3p.jpg);
+  background-image: url(https://isadora3.github.io/amnh-scorpions/images/south-african-arachnid-biodiversity-TypeCatalogueNumberVerification-corrected.jpg);
 }
 #card-karoo-biogaps {
-  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512658065/Lorenzo_2BPrendini_2Bdigging_2Bscorpion_2Bburrow_d3clhk.jpg);
+  background-image: url(https://isadora3.github.io/amnh-scorpions/images/Lorenzo_2BPrendini_2Bdigging_2Bscorpion_2Bburrow.jpg);
 }
 #card-western-cape {
-  background-image: url(https://res.cloudinary.com/isadora/image/upload/e_improve/v1512657671/939dd004b48f57133b2a1d6d4cb4e425_e5peeh.jpg);
+  background-image: url(https://isadora3.github.io/amnh-scorpions/images/western-cape-contrast.jpg);
 }
 #card-vaejovidae {
-  background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512656215/Fixing-scorpions_ryvw2e.jpg);
+  background-image: url(https://isadora3.github.io/amnh-scorpions/images/Fixing-scorpions.jpg);
 }
 #card-solifugae {
-  background-image: url(https://res.cloudinary.com/isadora/image/upload/c_crop/v1512656718/solifugae-G-fumi-in-jar-corrected_rqb6dr.jpg);
+  background-image: url(https://isadora3.github.io/amnh-scorpions/images/solifugae-G-fumi-in-jar-corrected.jpg);
 }
 footer {
   background-color: #222;
@@ -239,7 +261,7 @@ footer #site-map ul li {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .jumbotron {
-    height: 500px;
+/*     height: 500px; */
   }
   #homepage-header {
     background-position: 0px -50px;
@@ -261,7 +283,7 @@ footer #site-map ul li {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .jumbotron {
-    height: 800px;
+/*     height: 800px; */
   }
   #homepage-header {
     background-position: 100px -130px;
