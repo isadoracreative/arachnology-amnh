@@ -51,21 +51,21 @@ body {
   max-width: 700px;
 }
 a:link, a:visited {
-  color: #007ca0;
+  color: #62bacd;
 }
 a:hover {
-  color: #17a2b8;
+  color: #6dcff6;
   text-decoration: none;
 }
 a:active {
-  color: #c9242b;
+  color: #343a40;
 }
 :focus, :active, button:focus, button:active {
    outline: none;
    box-shadow: none;
 }
 .text-info {
-  color: #007ca0 !important;
+  color: #62bacd !important;
 }
 h1, h2 {
   font-family: "atrament-web", Impact, Tahoma, Helvetica, Arial, sans-serif;
@@ -80,9 +80,7 @@ h3 {
   text-transform: uppercase;
 }
 h4 {
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-size: 1.1rem;
 }
 .bg-info {
   background-color: #007ca0 !important;
@@ -96,10 +94,6 @@ h4 {
   font-size: 2.5rem;
   padding: 10px;
 }
-#reasonsModal .modal-footer i.fa {
-  font-size: 1rem;
-  padding: 2px;
-  }
 ul.show-less li p {
   color: black;
   height: 5rem;
@@ -111,15 +105,12 @@ ul.show-less li p.read-more {
   margin: -.8rem 0 0;
   text-align: right;
 }
-#related-projects div.card {
-  border: 1px solid #868e96;
-  border-top: 8px solid #007ca0;
+#reasons-grid ul.show-less li a p.read-more:hover {
+  color: #6dcff6 !important ;
 }
-#related-projects div.card-body {
-  height: 15rem;
-}
-#related-projects div.card-title-bg {
-  background-color: rgba(0,0,0,.5);
+#reasonsModal .modal-footer i.fa {
+  font-size: 1rem;
+  padding: 2px;
 }
 .card {
   display: inline;
@@ -127,7 +118,26 @@ ul.show-less li p.read-more {
 .card-text {
   line-height: 1.3rem;
 }
-.card-text::after {
+#related-projects div.card {
+  border: 0;
+  border-top: 9px solid #62bacd;
+  box-shadow: 0 2px 4px #dedad6;
+}
+#related-projects div.card-body {
+  background-size: cover;
+  height: 15rem;
+  -webkit-filter: saturate(70%);
+  filter: saturate(70%);
+  transition: all .7s ease;
+}
+#related-projects div.card-body:hover {
+  -webkit-filter: saturate(120%);
+  filter: saturate(120%);
+}
+#related-projects .card-title-bg {
+  background-color: rgba(0,0,0,.3);
+}
+#related-projects .card-text::after {
   content: "\f0a9";
   font-family: FontAwesome;
   font-size: .9rem;
@@ -135,23 +145,18 @@ ul.show-less li p.read-more {
 }
 #card-south-african {
   background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512657583/south-african-arachnid-biodiversity-60170.Capturing-a-burrowing-scorpion_roky3p.jpg);
-  background-size: cover;
 }
 #card-karoo-biogaps {
   background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512658065/Lorenzo_2BPrendini_2Bdigging_2Bscorpion_2Bburrow_d3clhk.jpg);
-  background-size: cover;
 }
 #card-western-cape {
   background-image: url(https://res.cloudinary.com/isadora/image/upload/e_improve/v1512657671/939dd004b48f57133b2a1d6d4cb4e425_e5peeh.jpg);
-  background-size: cover;
 }
 #card-vaejovidae {
   background-image: url(https://res.cloudinary.com/isadora/image/upload/v1512656215/Fixing-scorpions_ryvw2e.jpg);
-  background-size: cover;
 }
 #card-solifugae {
   background-image: url(https://res.cloudinary.com/isadora/image/upload/c_crop/v1512656718/solifugae-G-fumi-in-jar-corrected_rqb6dr.jpg);
-  background-size: cover;
 }
 footer {
   background-color: #222;
@@ -223,12 +228,12 @@ footer #site-map ul li {
     background-position: 0px -50px;
   }
   .navbar-brand img {
-  margin-top: -5px;
-  width: 240px;
+    margin-top: -5px;
+    width: 240px;
   }
   #reasonsModal .modal-footer i.fa {
-  font-size: 1.5rem;
-  padding: 8px;
+    font-size: 1.5rem;
+    padding: 8px;
   }
 }
 /* Medium devices (tablets, 768px and up) */
