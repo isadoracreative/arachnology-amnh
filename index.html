@@ -12,6 +12,8 @@
     <script src="https://use.fontawesome.com/c2152b0b49.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -52,52 +54,52 @@
           </ul>
         </div>
       </nav>
-      <div class="jumbotron jumbotron-fluid position-relative">
-        <div class="container-fluid position-fixed" id="homepage-header"></div>
-        <div class="container-fluid h-100 position-absolute bg-dark"></div>
-        <div class="h-100 d-flex align-items-center justify-content-center">
+      <div class="jumbotron jumbotron-fluid position-relative bg-white">
+        <div class="container-fluid position-fixed skew" id="homepage-header"></div>
+        <div class="container-fluid h-100 position-absolute bg-dark skew"></div>
+        <div class="h-75 d-flex align-items-center justify-content-center">
           <img src="https://isadora3.github.io/amnh-scorpions/images/logo-color-ko-lg.png" alt="Logo: AMNH Aracnology Lab" class="col-sm-10 col-md-8 pr-4 pt-5" id="logo-header">
         </div>
       </div> <!-- jumbotron -->
     </header>
-    <main class="scroll-second">
-      <div class="container-fluid show-bg"></div>
+    <main><!-- ScrollMagic scene1 -->
+      <div class="skew-top bg-white"></div>
       <div class="container-fluid bg-white py-5">
-        <article class="container" id="quicklinks">
+        <article class="container up" id="quicklinks">
           <div class="row justify-content-center">
             <div class="col-lg-10">
               <div class="row justify-content-center">
-                <div class="col-10 col-sm-6 col-md-4 p-4 px-lg-5 mb-2">
+                <div class="col-10 col-sm-6 col-md-4 m-3 m-sm-0 p-sm-4 px-lg-5">
                   <a href="#">
                       <img class="w-100 rounded-circle" src="https://isadora3.github.io/amnh-scorpions/images/PrendiniLabAugust2015-square.jpg" alt="Prendini Lab Members Outside of AMNH August 2015">
                       <h4 class="text-center pt-3">People</h4>
                   </a>
                 </div>
-                <div class="col-10 col-sm-6 col-md-4 p-4 px-lg-5 mb-2">
+                <div class="col-10 col-sm-6 col-md-4 m-3 m-sm-0 p-sm-4 px-lg-5">
                   <a href="#">
                     <img class="w-100 rounded-circle" src="https://isadora3.github.io/amnh-scorpions/images/molecular-lab-photo1-square.jpg" alt="Arachnology Molecular Lab">
                     <h4 class="text-center pt-3">Facilities</h4>
                   </a>
                 </div>
-                <div class="col-10 col-sm-6 col-md-4 p-4 px-lg-5 mb-2">
+                <div class="col-10 col-sm-6 col-md-4 m-3 m-sm-0 p-sm-4 px-lg-5">
                   <a href="#">
                     <img class="w-100 rounded-circle" src="https://isadora3.github.io/amnh-scorpions/images/scorpionbottles3-square.jpg" alt="Bottled Collection Scorpions">
                     <h4 class="text-center pt-3">Collections</h4>
                   </a>
                 </div>
-                <div class="col-10 col-sm-6 col-md-4 p-4 px-lg-5 mb-2">
+                <div class="col-10 col-sm-6 col-md-4 m-3 m-sm-0 p-sm-4 px-lg-5">
                   <a href="#">
                     <img class="w-100 rounded-circle" src="https://isadora3.github.io/amnh-scorpions/images/DSCN1182-square.jpg" alt="Lorenzo Prendini in the Field">
                     <h4 class="text-center pt-3">Fieldwork</h4>
                   </a>
                 </div>
-                <div class="col-10 col-sm-6 col-md-4 p-4 px-lg-5 mb-2">
+                <div class="col-10 col-sm-6 col-md-4 m-3 m-sm-0 p-sm-4 px-lg-5">
                   <a href="#">
                     <img class="w-100 rounded-circle border border-secondary" src="https://isadora3.github.io/amnh-scorpions/images/Scorpion_2-square-shifted.jpg" alt="Scorpion Illustration">
                     <h4 class="text-center pt-3">Publications</h4>
                   </a>
                 </div>
-                <div class="col-10 col-sm-6 col-md-4 p-4 px-lg-5 mb-2">
+                <div class="col-10 col-sm-6 col-md-4 m-3 m-sm-0 p-sm-4 px-lg-5">
                   <a href="#">
                     <img class="w-100 rounded-circle" src="https://isadora3.github.io/amnh-scorpions/images/cobweb-morgentau-dew-dewdrop-53367-square.jpg" alt="Spiderweb with Dewdrops">
                     <h4 class="text-center pt-3">Resources</h4>
@@ -112,7 +114,7 @@
       <div class="container-fluid bg-danger py-5">
         <article class="container col-11 col-sm-10 col-md-8 col-lg-7 col-xl-6" id="why-scorpions">
           <h1 class="text-white line-below">Why Scorpions?</h1>
-          <p class="lead text-white">The Arachnology Lab at the AMNH focuses on the taxonomy, phylogeny and biogeography of scorpions and related arachnid orders. There are many compelling reasons to study these organisms. Scorpions and their kin are ancient, medically important, ecologically, morphologically and taxonomically diverse, and distributed in most terrestrial habitats and elevations on all continents except Antarctica. Scorpions inspire fear and fascination. Many species are threatened yet little is known about their biology, new species remain to be discovered, and there are few experts globally. The world scorpion fauna will remain poorly known until more scorpion specialists are trained and prospects for their employment improve.</p>
+          <p class="lead text-white">The Arachnology Lab at the American Museum of Natural History focuses on the taxonomy, phylogeny and biogeography of scorpions and related arachnid orders. There are many compelling reasons to study these organisms. Scorpions and their kin are ancient, medically important, ecologically, morphologically and taxonomically diverse, and distributed in most terrestrial habitats and elevations on all continents except Antarctica. Scorpions inspire fear and fascination. Many species are threatened yet little is known about their biology, new species remain to be discovered, and there are few experts globally. The world scorpion fauna will remain poorly known until more scorpion specialists are trained and prospects for their employment improve.</p>
         </article><!-- why-scorpions -->
       </div><!-- container --> 
       <div class="container-fluid bg-white py-4">
@@ -418,6 +420,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- ScrollMagic JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
     

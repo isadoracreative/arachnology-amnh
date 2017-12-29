@@ -1,14 +1,13 @@
 /* Script for AMNH scorpions website */
 /* Website visual design and front-end development by Isadora Williams, copyright 2018 */
 
+
+
 // on scroll, remove class .bg-trans from #nav-header and add class .bg-dark, transition .5s
 // ^before writing this, add class .bg-trans and remove class .bg-dark to #nav-header in html
 
 // on scroll, remove class .invisible and add class .visible to .navbar-brand img, transition .5s
 // ^before writing this, add .invisible class to .navbar-brand img in html
-
-// delay scroll of .scroll-second until #logo-header reaches top of screen
-// ^this will allow for the temporary reveal of the #homepage-header background image
 
 // nav and header animation before converting to bootstrap
 // $(window).scroll(function () {
@@ -33,29 +32,46 @@
 // if header has scrolled past 150px, add the class for the smaller header <-will require css class with transition
 // else if header has not scrolled past 150px, remove the class for the small header
 
+// SCROLLMAGIC
+// create controller
+let controller = new ScrollMagic.Controller();
+// create scene triggered by reaching px location
+let scene1 = new ScrollMagic.Scene({
+  offset: 0, // start scene after scrolling for __px
+  duration: 600 // pin the element for __px of scrolling
+})
+// create scene trigged by reaching element
+// let scene = new ScrollMagic.Scene({
+//   triggerElement: 'main', // starting scene, when reaching this element
+//   duration: 400 // pin the element for a total of 400px
+// })
+.setPin('main'); // the element we want to pin
+
+// Add Scene to ScrollMagic Controller
+// controller.addScene(scene1);
+
+// Add more than one Scene to ScrollMagic Controller
+controller.addScene([
+  scene1,
+  // scene2,
+  // scene3
+]);
 
 // USERFLOW for #reasons-grid entrance
-
-// user scrolls past initial view
-// cards slide in right to left
-
+// user scrolls to #reasons-grid
+// fontawesome icons animate with fadeInDown
 
 // PSEUDOCODE for #reasons-grid entrance
-
-// create .hide class with margin-left: 100%; and transition: all 0.5s;
-// addClass .hide on page load
-// get height of browser window
-// listen for scroll past that height
-// removeClass .hide
+// get px height of browser window
+// listen for #reasons-grid to reach that px y-coordinate
+// addClass .animated and .fadeInDown
 
 
-// USERFLOW for #reasons-grid interactiion
-
+// USERFLOW for #reasons-grid modal
 // user clicks on an <a> within the #reasons-grid
 // modal dialog displays full content of <a>
 
-// SCRIPT for #reasons-grid interaction
-
+// SCRIPT for #reasons-grid modal
 // get modal content <a>
 // listen for show.bs.modal
 $('#reasonsModal').on('show.bs.modal', function (event) {
@@ -70,6 +86,7 @@ $('#reasonsModal').on('show.bs.modal', function (event) {
   // remove p.read-more within modal
   modal.find('p.read-more').remove()
 })
+  
 
 // USERFLOW for #reasonsModal interaction
 // user clicks one of icons at bottom of modal dialog
@@ -78,25 +95,21 @@ $('#reasonsModal').on('show.bs.modal', function (event) {
 // PSEUDOCODE for #reasonsModal interaction
 
 
-// USERFLOW for #related-projects
+// USERFLOW for #related-projects entrance
+// user scrolls to #related-projects
+// cards animate with fadeInRight
 
+// PSEUDOCODE for #related-projects entrance
+// get px height of browser window
+// listen for #related-projects to reach that px y-coordinate
+// addClass .animated and .fadeInRight
+
+
+// USERFLOW for #related-projects
 // user hovers over tile
 // background image grows within the div
 
-
 // PSEUDOCODE for #related-projects
-
-// jquery .animate right to left so they all slide into place from the right side on scroll
-
-
-// USERFLOW for #related-projects
-
-// user hovers over tile
-// background image grows within the div
-
-
-// PSEUDOCODE for #related-projects
-
 // grab #related-projects div.tile
 // attach hover event to #related-projects div.tile
 // instruct handlerIn to increase the background-size to 150%

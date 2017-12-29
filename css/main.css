@@ -21,9 +21,21 @@ body {
 .bg-trans {
   background-color: rgba(0,0,0,0);
 }
-/* container for showing background images on scroll, add'l js needed */
-.show-bg {
-  height: 300px;
+.up {
+  margin-top: -75px;
+}
+.skew{
+  margin: -100px 0;
+  transform: skew(0, 5deg);
+  -ms-transform: skew(0, 5deg);
+  -webkit-transform: skew(0, 5deg);
+}
+.skew-top {
+  margin-bottom: -100px;
+  height: 200px;
+  transform: skew(0, 5deg);
+  -ms-transform: skew(0, 5deg);
+  -webkit-transform: skew(0, 5deg);
 }
 .line-below:after {
   border-bottom: 5px solid rgba(255,255,255,.5);
@@ -43,8 +55,9 @@ body {
 }
 .jumbotron {
 /*   height: 380px; */
-  height: 100vh;
+  height: 75vh;
   margin: 0;
+  margin-bottom: -150px;
   padding: 0;
   background-color: #000;
   z-index: -2;
@@ -52,7 +65,7 @@ body {
 #homepage-header {
   background: #000 url(https://isadora3.github.io/amnh-scorpions/images/Emperor_Scorpion_Under_UV_Light-contrast.jpg) no-repeat -100px -50px fixed;
   background-size: auto 450px;
-  height: 380px;
+  height: 75vh;
   z-index: -1;
 }
 #logo-header {
@@ -133,6 +146,11 @@ ul.show-less li p.read-more {
 #reasonsModal .modal-footer i.fa {
   font-size: 1rem;
   padding: 2px;
+}
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0);
+  -moz-transform: translate(0);
+  transform: translate(0);
 }
 .card {
   display: inline;
@@ -266,7 +284,7 @@ footer #site-map ul li {
   #homepage-header {
     background-position: 0px -50px;
     background-size: auto 650px;
-    height: 500px;
+/*     height: 500px; */
   }
   #reasons-grid li{
     padding: 30px;
@@ -288,7 +306,7 @@ footer #site-map ul li {
   #homepage-header {
     background-position: 100px -130px;
     background-size: auto 1000px;
-    height: 800px;
+/*     height: 800px; */
   }
 }
 
