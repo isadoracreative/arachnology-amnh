@@ -76,15 +76,15 @@ controller.addScene([
 // listen for show.bs.modal
 $('#reasonsModal').on('show.bs.modal', function (event) {
   // get <a> that triggered the modal
-  let button = $(event.relatedTarget)
+  let button = $(event.relatedTarget);
   // get html from <a>
-  let content = button.html()
+  let content = button.html();
   // target modal
-  let modal = $(this)
+  let modal = $(this);
   // put html from <a> into modal
-  modal.find('.modal-body').html(content)
+  modal.find('.modal-body').html(content);
   // remove p.read-more within modal
-  modal.find('p.read-more').remove()
+  modal.find('p.read-more').remove();
 })
   
 
@@ -93,6 +93,31 @@ $('#reasonsModal').on('show.bs.modal', function (event) {
 // content from corresponding #reasons-grid li loads in modal
 
 // PSEUDOCODE for #reasonsModal interaction
+// listen for click  on <i> within modal
+$('#reasonsModal i').on('click', function (event) {
+  // return index of clicked <i> within .modal-footer
+  let reasonIndex = $('.modal-footer i').index(this);
+  // subtract 1 to skip the first <i> ('previous' caret icon)
+  reasonIndex -=1;
+  // find <a> of same index within #reasons-grid
+  // get html from <a>
+  
+  // let content = $('#reasons-grid a:eq( reasonIndex )').html();
+  // ^ can't get reasonIndex to be recognized as a valid substitute for an index number
+  // using '0' for index number until I can get reasonIndex to work above
+  let content = $('#reasons-grid a:eq(0)').html();
+  
+  // target modal
+  let modal = $('.modal-content');
+  // replace html from modal body with new content
+  modal.find('.modal-body').html(content);
+  // remove p.read-more within modal
+  modal.find('p.read-more').remove();
+})
+
+// USERFLOW for #reasonsModal interaction
+// user clicks on 'previous' or 'next' caret icon at bottom of modal dialog
+// content from corresponding #reasons-grid li loads in modal
 
 
 // USERFLOW for #related-projects entrance

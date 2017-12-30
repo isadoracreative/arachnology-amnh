@@ -101,7 +101,7 @@
                 </div>
                 <div class="col-10 col-sm-6 col-md-4 m-3 m-sm-0 p-sm-4 px-lg-5">
                   <a href="#">
-                    <img class="w-100 rounded-circle" src="https://isadora3.github.io/amnh-scorpions/images/cobweb-morgentau-dew-dewdrop-53367-square.jpg" alt="Spiderweb with Dewdrops">
+                    <img class="w-100 rounded-circle" src="https://isadora3.github.io/amnh-scorpions/images/south-african-arachnid-biodiversity-WorkingTogether-square.jpg" alt="Spiderweb with Dewdrops">
                     <h4 class="text-center pt-3">Resources</h4>
                   </a>
                 </div>
@@ -120,7 +120,7 @@
       <div class="container-fluid bg-white py-4">
         <article class="container col-11 col-sm-10 col-xl-7" id="reasons-grid">
           <ul class="row show-less">
-            <li class="col-md-4" id="diversity">
+            <li class="col-md-4">
               <a href="#reasonsModal" data-toggle="modal">
                 <i class="fa fa-list-ol text-danger" aria-hidden="true"></i> 
                 <h3 class="text-danger">Diversity</h3>
@@ -128,7 +128,7 @@
               <p class="read-more text-info">&hellip;Read more</p>
               </a>
             </li>
-            <li class="col-md-4" id="antiquity">
+            <li class="col-md-4">
               <a href="#reasonsModal" data-toggle="modal">
               <i class="fa fa-history text-danger" aria-hidden="true"></i>
               <h3 class="text-danger">Antiquity</h3>
@@ -197,29 +197,51 @@
           <div class="modal fade" id="reasonsModal" tabindex="-1" role="dialog" aria-labelledby="reasonsModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
-                <div class="modal-header border-0 pb-0">
+                <div class="modal-header border-0 pb-0 text-secondary">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body px-4 pt-0">
+                  <!-- dynamically added content -->
                 </div>
-                <div class="modal-footer d-flex justify-content-center">
-                  <i class="fa fa-list-ol text-secondary" aria-hidden="true"></i>
-                  <i class="fa fa-history text-secondary" aria-hidden="true"></i>
-                  <i class="fa fa-flag text-secondary" aria-hidden="true"></i>
-                  <i class="fa fa-globe text-secondary" aria-hidden="true"></i>
-                  <i class="fa fa-moon-o text-secondary" aria-hidden="true"></i>
-                  <i class="fa fa-book text-secondary" aria-hidden="true"></i>
-                  <i class="fa fa-leaf text-secondary" aria-hidden="true"></i>
-                  <i class="fa fa-level-down text-secondary" aria-hidden="true"></i>
-                  <i class="fa fa-bar-chart text-secondary" aria-hidden="true"></i>
+                <div class="modal-footer d-flex justify-content-around text-secondary">
+                  <i class="fa fa-caret-left" aria-label="Previous"></i>
+                  <i class="fa fa-list-ol" aria-hidden="true"></i>
+                  <i class="fa fa-history" aria-hidden="true"></i>
+                  <i class="fa fa-flag" aria-hidden="true"></i>
+                  <i class="fa fa-globe" aria-hidden="true"></i>
+                  <i class="fa fa-moon-o" aria-hidden="true"></i>
+                  <i class="fa fa-book" aria-hidden="true"></i>
+                  <i class="fa fa-leaf" aria-hidden="true"></i>
+                  <i class="fa fa-level-down" aria-hidden="true"></i>
+                  <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  <i class="fa fa-caret-right" aria-label="Next"></i>
                 </div>
-              </div>
-            </div>
-          </div>
+              </div><!-- modal-content -->
+            </div><!-- modal-dialog -->
+          </div><!-- modal -->
         </div>
         </article><!-- reasons-grid -->
+      </div><!-- container -->
+      <div class="container-fluid bg-info py-5">
+        <article class="container py-3" id="science360-video">
+          <div class="row justify-content-center">
+            <div class="p-3 col-md-10 col-lg-8 col-xl-6 mb-3">
+              <div class="d-inline-block embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item video-bigger" src="https://players.brightcove.net/679256133001/VyVPSnptg_default/index.html?videoId=2255463840001" allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-8 col-xl-5 ml-xl-2 mt-xl-1">
+              <h1 class="text-white line-below">In The Field with Lorenzo Prendini</h1>
+              <p class="lead text-white"><em>Fast Draw: In Search of Scorpions </em> joins Lorenzo Prendini as he looks for new species of scorpions and researches their ancestries. He also studies how venomous species might benefit the medical community. Josh Landis and Mitch Butler follow Lorenzo out into the field to study scorpions and talk with him about his experiences through this research.
+              </p>
+              <p class="text-white">Courtesy of The National Science Foundation <a href="https://science360.gov/obj/video/d49dde11-f6de-42a0-89b1-4959831392fd/fast-draw-search-scorpions" target="_blank"> Science360 Video </a>
+              </p>
+            </div>
+          </div><!-- row justify-content-center --> 
+        </article><!-- science360-video -->
       </div><!-- container -->
       <div class="container-fluid bg-light py-5">
         <aside class="container" id="related-projects">

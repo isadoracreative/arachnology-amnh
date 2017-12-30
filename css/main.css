@@ -143,14 +143,30 @@ ul.show-less li p.read-more {
 #reasons-grid ul.show-less li a p.read-more:hover {
   color: #6dcff6 !important ;
 }
+#reasonsModal .modal-content {
+  background: white url(https://isadora3.github.io/amnh-scorpions/images/vaejovidae-project-Site-07-P-rufulus.jpg) 70% -12px/45% no-repeat;
+}
 #reasonsModal .modal-footer i.fa {
   font-size: 1rem;
   padding: 2px;
+}
+#reasonsModal .modal-footer i.fa:hover {
+  color: #dc3545;
+}
+#reasonsModal .modal-footer i.fa:first-child:hover, #reasonsModal .modal-footer i.fa:last-child:hover {
+  color: #17a2b8;
 }
 .modal.fade .modal-dialog {
   -webkit-transform: translate(0);
   -moz-transform: translate(0);
   transform: translate(0);
+}
+iframe.video-bigger {
+    -ms-transform: scale(1.35);
+    -moz-transform: scale(1.35);
+    -o-transform: scale(1.35);
+    -webkit-transform: scale(1.35);
+    transform: scale(1.35);
 }
 .card {
   display: inline;
@@ -271,6 +287,9 @@ footer #site-map ul li {
     margin-top: -5px;
     width: 240px;
   }
+  #reasonsModal .modal-content {
+    background-position: 80% -15px/50%;
+  }
   #reasonsModal .modal-footer i.fa {
     font-size: 1.5rem;
     padding: 8px;
@@ -300,6 +319,10 @@ footer #site-map ul li {
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .skew-top {
+  margin-bottom: -200px;
+  height: 315px;
+  }
   .jumbotron {
 /*     height: 800px; */
   }
