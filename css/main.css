@@ -37,7 +37,19 @@ body {
   -ms-transform: skew(0, 5deg);
   -webkit-transform: skew(0, 5deg);
 }
-.line-below:after {
+.arrow-down::after {
+  border: 20px solid transparent;
+  content:"";
+  float: left;
+  height: 0; 
+  left: 50%;
+  position: relative;
+  width: 0; 
+}
+.arrow-danger::after {
+  border-top: 20px solid #dc3545;
+}
+.line-below::after {
   border-bottom: 5px solid rgba(255,255,255,.5);
   content:"";
   display:block;
