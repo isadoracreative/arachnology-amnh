@@ -198,13 +198,13 @@ iframe.video-bigger {
 #related-projects div.card-body {
   background-size: cover;
   height: 15rem;
-  -webkit-filter: grayscale(30%);
-  filter: grayscale(30%);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
   transition: all .3s ease;
 }
 #related-projects div.card-body:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 #related-projects .card-title-bg {
   background-color: rgba(0,0,0,.3);
