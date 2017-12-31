@@ -16,40 +16,40 @@ $(window).scroll(function () {
     }
   })
 
-// SCROLLMAGIC
-// create controller
+// ScrollMagic controller
 let controller = new ScrollMagic.Controller();
-// create scene triggered by reaching px location
-let scene1 = new ScrollMagic.Scene({
-  offset: 0, // start scene after scrolling for __px
-  duration: 600 // pin the element for __px of scrolling
-})
-// create scene trigged by reaching element
-// let scene = new ScrollMagic.Scene({
-//   triggerElement: 'main', // starting scene, when reaching this element
-//   duration: 400 // pin the element for a total of 400px
-// })
-.setPin('main'); // the element we want to pin
 
-// Add Scene to ScrollMagic Controller
-// controller.addScene(scene1);
+  // Scene 1: reveal #homepage-header background image
+  // create scene triggered by reaching px location
+  let scene1 = new ScrollMagic.Scene({
+    offset: 0, // start scene after scrolling for 0px
+    duration: 600 // pin the element for 600px of scrolling
+  })
+  .setPin('main'); // the element we want to pin
 
-// Add more than one Scene to ScrollMagic Controller
-controller.addScene([
-  scene1,
-  // scene2,
-  // scene3
-]);
+  // Scene 2: #reasons-grid icons animate with fadeInDown
+  // create scene trigged by reaching element
+  let scene2 = new ScrollMagic.Scene({
+    triggerElement: '#why-scorpions', // starting scene when reaching this element
+    duration: 0 // pin the element for a total of 0px, i.e. don't pin anything
+  })
+  .setClassToggle('#reasons-grid i','fadeInDown');
 
-// USERFLOW for #reasons-grid entrance
-// user scrolls to #reasons-grid
-// fontawesome icons animate with fadeInDown
+  // Scene 3: #related-projects cards animate with fadeInRight
+  let scene3 = new ScrollMagic.Scene({
+    triggerElement: '#science360-video',
+    duration: 0
+  })
+  .setClassToggle('#related-projects .card','fadeInRight');
 
-// PSEUDOCODE for #reasons-grid entrance
-// get px height of browser window
-// listen for #reasons-grid to reach that px y-coordinate
-// addClass .animated and .fadeInDown
-
+  // Add one scene to ScrollMagic Controller
+  // controller.addScene(scene1);
+  // Add more than one Scene to ScrollMagic Controller
+  controller.addScene([
+    scene1,
+    scene2,
+    scene3
+  ]);
 
 // USERFLOW for #reasons-grid modal
 // user clicks on an <a> within the #reasons-grid
@@ -104,22 +104,3 @@ $('#reasonsModal i').on('click', function (event) {
 // content from corresponding #reasons-grid li loads in modal
 
 
-// USERFLOW for #related-projects entrance
-// user scrolls to #related-projects
-// cards animate with fadeInRight
-
-// PSEUDOCODE for #related-projects entrance
-// get px height of browser window
-// listen for #related-projects to reach that px y-coordinate
-// addClass .animated and .fadeInRight
-
-
-// USERFLOW for #related-projects
-// user hovers over tile
-// background image grows within the div
-
-// PSEUDOCODE for #related-projects
-// grab #related-projects div.tile
-// attach hover event to #related-projects div.tile
-// instruct handlerIn to increase the background-size to 150%
-// instruct handlerOut to return the background-size to cover
