@@ -19,39 +19,74 @@ $(window).scroll(function () {
 // ScrollMagic controller
 let controller = new ScrollMagic.Controller();
 
-  // Scene 1: reveal #homepage-header background image
+  // Scene: reveal #homepage-header background image
   // create scene triggered by reaching px location
-  let scene1 = new ScrollMagic.Scene({
+  let sceneHomepageHeader = new ScrollMagic.Scene({
     offset: 0, // start scene after scrolling for 0px
     duration: 600 // pin the element for 600px of scrolling
   })
-  .setPin('main'); // the element we want to pin
+  .setPin('main') // the element we want to pin
+  .addTo(controller); // add scene to controller
 
-  // Scene 2: #reasons-grid icons animate with fadeInDown
+  // Scene: #reasons-grid icons animate with fadeInDown
   // create scene trigged by reaching element
-  let scene2 = new ScrollMagic.Scene({
+  let sceneReasonsGrid = new ScrollMagic.Scene({
     triggerElement: '#reasons-grid', // starting scene when reaching this element
     duration: 0 // pin the element for a total of 0px, i.e. don't pin anything
   })
   .triggerHook(1) // triggerHook 0 is top of window, .5 is middle, 1 is bottom
-  .setClassToggle('#reasons-grid i','fadeInDown');
+  .setClassToggle('#reasons-grid i','fadeInDown')
+  .addTo(controller);
+  // but don't animate '#reasons-grid i' within the modal dialog
+  $('#reasons-grid a').on('click', function () {  // listen for click on '#reasons-grid a'
+    $('#reasons-grid i').removeClass('fadeInDown'); // removeClass .fadeInDown from '#reasons-grid i'
+  })
 
-  // Scene 3: #related-projects cards animate with fadeInRight
-  let scene3 = new ScrollMagic.Scene({
+  // Scene: #science360-video animates with pulse when it reaches center of screen
+  let sceneScience360Video = new ScrollMagic.Scene({
+    triggerElement: '#science360-video',
+    duration: 0
+  })
+  .triggerHook(.7)
+  .setClassToggle('#science360-video div.animated','pulse')
+  .addTo(controller);
+
+  // Scene: #related-projects cards animate with fadeInRight one at a time
+  let sceneRelatedProjects1 = new ScrollMagic.Scene({
     triggerElement: '#related-projects',
     duration: 0
   })
   .triggerHook(1)
-  .setClassToggle('#related-projects .card','fadeInRight');
-
-  // Add one scene to ScrollMagic Controller
-  // controller.addScene(scene1);
-  // Add more than one Scene to ScrollMagic Controller
-  controller.addScene([
-    scene1,
-    scene2,
-    scene3
-  ]);
+  .setClassToggle('#related-projects .animate1 .card','fadeInRight')
+  .addTo(controller);
+  let sceneRelatedProjects2 = new ScrollMagic.Scene({
+    triggerElement: '#related-projects',
+    duration: 0
+  })
+  .triggerHook(.98)
+  .setClassToggle('#related-projects .animate2 .card','fadeInRight')
+  .addTo(controller);
+  let sceneRelatedProjects3 = new ScrollMagic.Scene({
+    triggerElement: '#related-projects',
+    duration: 0
+  })
+  .triggerHook(.96)
+  .setClassToggle('#related-projects .animate3 .card','fadeInRight')
+  .addTo(controller);
+  let sceneRelatedProjects4 = new ScrollMagic.Scene({
+    triggerElement: '#related-projects',
+    duration: 0
+  })
+  .triggerHook(.93)
+  .setClassToggle('#related-projects .animate4 .card','fadeInRight')
+  .addTo(controller);
+  let sceneRelatedProjects5 = new ScrollMagic.Scene({
+    triggerElement: '#related-projects',
+    duration: 0
+  })
+  .triggerHook(.9)
+  .setClassToggle('#related-projects .animate5 .card','fadeInRight')
+  .addTo(controller);
 
 // USERFLOW for #reasons-grid modal
 // user clicks on an <a> within the #reasons-grid

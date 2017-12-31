@@ -62,7 +62,7 @@
         </div>
       </div> <!-- jumbotron -->
     </header>
-    <main><!-- ScrollMagic scene1 -->
+    <main>
       <div class="skew-top bg-white"></div>
       <div class="container-fluid bg-white py-5">
         <article class="container up" id="quicklinks">
@@ -108,8 +108,7 @@
               </div><!-- row -->
             </div><!-- col-lg-10-->
           </div><!-- row -->
-          
-        </article>
+        </article><!-- quicklinks -->
       </div><!-- container-fluid -->
       <div class="container-fluid bg-danger py-5">
         <article class="container col-11 col-sm-10 col-md-8 col-lg-7 col-xl-6" id="why-scorpions">
@@ -118,7 +117,7 @@
         </article><!-- why-scorpions -->
       </div><!-- container --> 
       <div class="container-fluid arrow-down arrow-danger">
-      </div><!-- container --> 
+      </div><!-- arrow --> 
       <div class="container-fluid bg-white py-4">
         <article class="container col-11 col-sm-10 col-xl-7" id="reasons-grid">
           <ul class="row show-less">
@@ -195,7 +194,7 @@
               </a>
             </li>
           </ul>
-          <!-- modal dialog -->
+          <!-- modal dialog with dynamic content from #reasons-grid ul -->
           <div class="modal fade" id="reasonsModal" tabindex="-1" role="dialog" aria-labelledby="reasonsModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -223,15 +222,14 @@
               </div><!-- modal-content -->
             </div><!-- modal-dialog -->
           </div><!-- modal -->
-        </div>
         </article><!-- reasons-grid -->
       </div><!-- container -->
       <div class="container-fluid bg-info py-5">
         <article class="container py-3" id="science360-video">
           <div class="row justify-content-center">
             <div class="p-3 col-md-10 col-lg-8 col-xl-6 mb-3">
-              <div class="d-inline-block embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item video-bigger" src="https://players.brightcove.net/679256133001/VyVPSnptg_default/index.html?videoId=2255463840001" allowfullscreen></iframe>
+              <div class="d-inline-block embed-responsive embed-responsive-16by9 animated">
+                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/249256321?title=0&byline=0&portrait=0" allowfullscreen></iframe>
               </div>
             </div>
             <div class="col-md-10 col-lg-8 col-xl-5 ml-xl-2 mt-xl-1">
@@ -248,7 +246,7 @@
         <aside class="container" id="related-projects">
           <h2 class="text-info">Related Projects</h2>
           <div class="row d-flex align-items-stretch">
-            <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4">
+            <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4 animate1">
               <div class="card bg-white w-100 animated">
                 <a href="http://jrsbiodiversity.org/grant/national-museum-bloemfontein" target="_blank">
                   <div class="card-body d-flex align-items-end px-0 pb-0" id="card-south-african">
@@ -262,7 +260,7 @@
                 </a>
               </div><!-- card -->
             </div><!-- flex-wrap -->
-            <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4">
+            <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4 animate2">
               <div class="card bg-white w-100 animated">
                 <a href="http://www.sanbi.org/biogaps" target="_blank">
                   <div class="card-body d-flex align-items-end px-0 pb-0" id="card-karoo-biogaps">
@@ -276,7 +274,7 @@
                 </a>
               </div><!-- card -->
             </div><!-- flex-wrap -->
-            <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4">
+            <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4 animate3">
               <div class="card bg-white w-100 animated">
                 <a href="http://www.speciesconservation.org/case-studies-projects/black-legged-burrowing-scorpion/2329" target="_blank">
                   <div class="card-body d-flex align-items-end px-0 pb-0" id="card-western-cape">
@@ -290,7 +288,7 @@
                 </a>
               </div><!-- card -->
             </div><!-- flex-wrap -->
-            <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4">
+            <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4 animate4">
               <div class="card bg-white w-100 animated">
                 <a href="http://www.vaejovidae.com" target="_blank">
                   <div class="card-body d-flex align-items-end px-0 pb-0" id="card-vaejovidae">
@@ -304,7 +302,7 @@
                 </a>
               </div><!-- card -->
             </div><!-- flex-wrap -->
-            <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4">
+            <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4 animate5">
               <div class="card bg-white w-100 animated">
                 <a href="http://www.solpugid.com" target="_blank">
                   <div class="card-body d-flex align-items-end px-0 pb-0" id="card-solifugae">
@@ -329,27 +327,28 @@
             <ul class="row" id="site-map">
               <div class="col-sm-4 col-md">
                 <li class="mb-4 pr-4" id="footer-contact">
-            <div class="logo">
-              <a href="#"><img src="https://res.cloudinary.com/isadora/image/upload/v1512515734/logo-ko-icon_ek2rkr.svg" alt="AMNH Arachnology Logo" id="logo-icon-footer">
-              </a>
-            </div>
-            <div id="footer-address">
-              <p>Arachnology at The American Museum of Natural History</p>
-              <p>
-                Central Park W. at 79th St. New York, NY 10024</p>
-              <i class="fa fa-envelope-o"></i>
-              <i class="fa fa-phone"></i>
-            </div>
-            <div id="logo-amnh"><a href="https://www.amnh.org/">
-              <img src="https://res.cloudinary.com/isadora/image/upload/v1512861198/logo-amnh_vrt_1cp_blk-12in-ko_ynxjsm.png" alt="AMNH Logo" id="logo-amnh-footer">
-        </a></div>
-            <div class="social">
-              <i class="fa fa-youtube-play"></i>
-              <i class="fa fa-twitter"></i>
-              <i class="fa fa-facebook"></i>
-              <i class="fa fa-instagram"></i>
-            </div>
-          </li>
+                  <div class="logo">
+                    <a href="#"><img src="https://res.cloudinary.com/isadora/image/upload/v1512515734/logo-ko-icon_ek2rkr.svg" alt="AMNH Arachnology Logo" id="logo-icon-footer">
+                    </a>
+                  </div>
+                  <div id="footer-address">
+                    <p>Arachnology at The American Museum of Natural History</p>
+                    <p>
+                      Central Park W. at 79th St. New York, NY 10024</p>
+                    <i class="fa fa-envelope-o"></i>
+                    <i class="fa fa-phone"></i>
+                  </div>
+                  <div id="logo-amnh">
+                    <a href="https://www.amnh.org/"><img src="https://res.cloudinary.com/isadora/image/upload/v1512861198/logo-amnh_vrt_1cp_blk-12in-ko_ynxjsm.png" alt="AMNH Logo" id="logo-amnh-footer">
+                    </a>
+                  </div>
+                  <div class="social">
+                    <i class="fa fa-youtube-play"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                  </div>
+                </li>
               </div>
               <div class="col-sm-4 col-xl">
                 <li class="submenu mb-4">
@@ -369,55 +368,55 @@
               </div>
               <div class="col-sm-4 col-xl">
                 <li class="submenu mb-4">
-                <p class="page-title">Facilities</p>
-                <ul>
-                  <li>American Museum of Natural History</li>
-                  <li>Research Lab</li>
-                  <li>Additional AMNH Facilities</li>
-                </ul>
-              </li>
-              <li class="submenu mb-4">
-                <p class="page-title">Collections</p>
-                <ul>
-                  <li>Overview</li>
-                  <li>Specimens</li>
-                  <li>Curation</li>
-                  <li>Collecting</li>
-                  <li>Documentation</li>
-                  <li>Tissue Collection</li>
-                  <li>Preparing Samples</li>
-                </ul>
-              </li>
+                  <p class="page-title">Facilities</p>
+                  <ul>
+                    <li>American Museum of Natural History</li>
+                    <li>Research Lab</li>
+                    <li>Additional AMNH Facilities</li>
+                  </ul>
+                </li>
+                <li class="submenu mb-4">
+                  <p class="page-title">Collections</p>
+                  <ul>
+                    <li>Overview</li>
+                    <li>Specimens</li>
+                    <li>Curation</li>
+                    <li>Collecting</li>
+                    <li>Documentation</li>
+                    <li>Tissue Collection</li>
+                    <li>Preparing Samples</li>
+                  </ul>
+                </li>
               </div>
               <div class="col-sm-4 col-xl">
                 <li class="submenu mb-4">
-                <p class="page-title">Fieldwork</p>
-                <ul>
-                  <li>Interactive Map</li>
-                  <li>List of Locations</li>
-                </ul>
-              </li>
-              <li class="submenu mb-4">
-                <p class="page-title">Publications</p>
-                <ul>
-                  <li>View List</li>
-                  <li>Download List</li>
-                </ul>
-              </li>
+                  <p class="page-title">Fieldwork</p>
+                  <ul>
+                    <li>Interactive Map</li>
+                    <li>List of Locations</li>
+                  </ul>
+                </li>
+                <li class="submenu mb-4">
+                  <p class="page-title">Publications</p>
+                  <ul>
+                    <li>View List</li>
+                    <li>Download List</li>
+                  </ul>
+                </li>
               </div>
               <div class="col-sm-4 col-xl">
                 <li class="submenu mb-4">
-                <p class="page-title">Resources</p>
-                <ul>
-                  <li>Collaborations</li>
-                  <li>Societies &amp; Organizations</li>
-                  <li>Collections &amp; Directories</li>
-                  <li>Databases</li>
-                  <li>Software</li>
-                  <li>Mapping</li>
-                  <li>Molecular Biology</li>
-                </ul>
-              </li>
+                  <p class="page-title">Resources</p>
+                  <ul>
+                    <li>Collaborations</li>
+                    <li>Societies &amp; Organizations</li>
+                    <li>Collections &amp; Directories</li>
+                    <li>Databases</li>
+                    <li>Software</li>
+                    <li>Mapping</li>
+                    <li>Molecular Biology</li>
+                  </ul>
+                </li>
               </div>
               <div class="col-sm-4 col-xl">
                 <li class="submenu mb-4">
@@ -428,9 +427,9 @@
                   </ul>
                 </li>
               </div>
-            </ul><!-- row -->
+            </ul><!-- site-map -->
         </div><!-- .container -->
-      </div>
+      </div><!-- .container-fluid -->
       <section id="copyright">
         <!-- add links to Lorenzo and Pío anchors on people page -->
         <p class="mb-0">&copy; 2006-2018 <a href="#">Lorenzo Prendini</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Content Revised by <a href="#">Pío Colmenares</a>, December 2017&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Web Design by <a href="http://isadoracreative.com" target="_blank">Isadora Williams</a>

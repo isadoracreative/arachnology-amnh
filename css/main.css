@@ -177,13 +177,6 @@ ul.show-less li p.read-more {
   -moz-transform: translate(0);
   transform: translate(0);
 }
-iframe.video-bigger {
-    -ms-transform: scale(1.35);
-    -moz-transform: scale(1.35);
-    -o-transform: scale(1.35);
-    -webkit-transform: scale(1.35);
-    transform: scale(1.35);
-}
 .card {
   display: inline;
 }
@@ -293,6 +286,26 @@ footer #site-map p.page-title {
 footer #site-map ul li {
   margin-bottom: .4rem;
 }
+#copyright p {
+  background-color: black;
+  color: #ccc;
+  font-size: 12px;
+  line-height: 1.8;
+  padding: 20px;
+  text-align: center;
+}
+#copyright a:link {
+  color: #ccc;
+}
+#copyright a:visited {
+  color: #ccc;
+}
+#copyright a:hover {
+  color: #6DCFF6;
+}
+#copyright a:active {
+  color: #007ca0;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -329,6 +342,7 @@ footer #site-map ul li {
     text-align: center;
   }
 }
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
@@ -349,82 +363,3 @@ footer #site-map ul li {
   }
 }
 
-
-/* convert this to bootstrap */
-
-/* header animation */
-/* header {
-  background-color: rgba(0,0,0,0);
-  height: 100px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  transition: all 1s;
-  z-index: 9;
-}
-header #logo-header {
-  float: left;
-  padding: 18px 20px;
-  width: 240px;
-  transition: all 1s;  
-}
-header nav {
-  float: right;
-}
-header nav li {
-  float: left;
-  font-size: 14px;
-  line-height: 7;
-  padding-right: 25px;
-  transition: all 1s;
-}
-header nav a:link {
-  color: white;
-}
-header nav a:visited {
-  color: white;
-}
-header nav a:hover {
-  color: #6DCFF6;
-}
-header nav a:active {
-  color: #007ca0;
-}
-header.header-offset {
-  background-color: black;
-  height: 50px;
-  opacity: .9;
-  transition: all 1s;
-}
-header.header-offset #logo-header {
-  margin-top: -18px;
-  transition: all 1s;
-  width: 200px;
-}
-header.header-offset nav li {
-  font-size: 12px;
-  line-height: 4;
-  padding-right: 20px;
-  transition: all 1s;
-} */
-
-#copyright p {
-  background-color: black;
-  color: #ccc;
-  font-size: 12px;
-  line-height: 1.8;
-  padding: 20px;
-  text-align: center;
-}
-#copyright a:link {
-  color: #ccc;
-}
-#copyright a:visited {
-  color: #ccc;
-}
-#copyright a:hover {
-  color: #6DCFF6;
-}
-#copyright a:active {
-  color: #007ca0;
-}
