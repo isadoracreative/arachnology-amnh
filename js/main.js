@@ -1,36 +1,20 @@
 /* Script for AMNH scorpions website */
 /* Website visual design and front-end development by Isadora Williams, copyright 2018 */
 
+// Header nav appears on scroll
+$(window).scroll(function () {
+    let offset = $(window).scrollTop();
 
-
-// on scroll, remove class .bg-trans from #nav-header and add class .bg-dark, transition .5s
-// ^before writing this, add class .bg-trans and remove class .bg-dark to #nav-header in html
-
-// on scroll, remove class .invisible and add class .visible to .navbar-brand img, transition .5s
-// ^before writing this, add .invisible class to .navbar-brand img in html
-
-// nav and header animation before converting to bootstrap
-// $(window).scroll(function () {
-//     let offset = $(window).scrollTop();
-
-//     if (offset > 150) {
-//       $('header').addClass('header-offset')
-//     } else {
-//       $('header').removeClass('header-offset')
-//     }
-//   })
-
-// USERFLOW for header
-
-// user scrolls past initial view
-// header transitions to smaller header and sticks to top of window
-
-// (new) PSEUDOCODE for header
-
-// grab header
-// listen for scroll past 150px
-// if header has scrolled past 150px, add the class for the smaller header <-will require css class with transition
-// else if header has not scrolled past 150px, remove the class for the small header
+    if (offset > 550) {
+      // remove class .bg-trans from #nav-header, add class .bg-dark, and slide down
+      $('#nav-header').addClass('bg-dark').removeClass('bg-trans').css({'margin-top':'0','transition':'all 1s'});
+      // show .navbar-brand img
+      $('.navbar-brand img').css({'opacity':'1','transition':'all 1s'});
+    } else {
+      $('#nav-header').addClass('bg-trans').removeClass('bg-dark').css({'margin-top':'-55px','transition':'all 1s'});
+      $('.navbar-brand img').css({'opacity':'0','transition':'all 1s'}); 
+    }
+  })
 
 // SCROLLMAGIC
 // create controller
