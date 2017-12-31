@@ -30,16 +30,18 @@ let controller = new ScrollMagic.Controller();
   // Scene 2: #reasons-grid icons animate with fadeInDown
   // create scene trigged by reaching element
   let scene2 = new ScrollMagic.Scene({
-    triggerElement: '#why-scorpions', // starting scene when reaching this element
+    triggerElement: '#reasons-grid', // starting scene when reaching this element
     duration: 0 // pin the element for a total of 0px, i.e. don't pin anything
   })
+  .triggerHook(1) // triggerHook 0 is top of window, .5 is middle, 1 is bottom
   .setClassToggle('#reasons-grid i','fadeInDown');
 
   // Scene 3: #related-projects cards animate with fadeInRight
   let scene3 = new ScrollMagic.Scene({
-    triggerElement: '#science360-video',
+    triggerElement: '#related-projects',
     duration: 0
   })
+  .triggerHook(1)
   .setClassToggle('#related-projects .card','fadeInRight');
 
   // Add one scene to ScrollMagic Controller
