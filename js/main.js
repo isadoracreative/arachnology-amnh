@@ -122,11 +122,8 @@ $('#reasonsModal i').on('click', function (event) {
   reasonIndex -=1;
   // find <a> of same index within #reasons-grid
   // get html from <a>
-  
-  // let content = $('#reasons-grid a:eq( reasonIndex )').html();
-  // ^ can't get reasonIndex to be recognized as a valid substitute for an index number
-  // using '0' for index number until I can get reasonIndex to work above
-  let content = $('#reasons-grid a:eq(0)').html();
+  // console.log(reasonIndex) // double check that it's the right index number
+  let content = $('#reasons-grid a:eq(' + reasonIndex + ')').html();
   
   // target modal
   let modal = $('.modal-content');
@@ -150,6 +147,3 @@ $('#reasonsModal i').on('click', function (event) {
     let subject = 'Arachnology at AMNH'; // assign subject of email
     window.location = 'mailto:' + email + '?subject=' + subject; // add mailto so click leads to user's email application
   });
-
-
-// try [0] for index number in modal dialog
