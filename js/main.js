@@ -31,7 +31,7 @@ let controller = new ScrollMagic.Controller();
   // Scene: #reasons-grid icons animate with fadeInDown
   // create scene trigged by reaching element
   let sceneReasonsGrid = new ScrollMagic.Scene({
-    triggerElement: '#reasons-grid', // starting scene when reaching this element
+    triggerElement: '#reasons-grid i', // starting scene when reaching this element
     duration: 0 // pin the element for a total of 0px, i.e. don't pin anything
   })
   .triggerHook(1) // triggerHook 0 is top of window, .5 is middle, 1 is bottom
@@ -63,36 +63,36 @@ let controller = new ScrollMagic.Controller();
     triggerElement: '#related-projects',
     duration: 0
   })
-  .triggerHook(.98)
+  .triggerHook(.95)
   .setClassToggle('#related-projects .animate2 .card','fadeInRight')
   .addTo(controller);
   let sceneRelatedProjects3 = new ScrollMagic.Scene({
     triggerElement: '#related-projects',
     duration: 0
   })
-  .triggerHook(.96)
+  .triggerHook(.93)
   .setClassToggle('#related-projects .animate3 .card','fadeInRight')
   .addTo(controller);
   let sceneRelatedProjects4 = new ScrollMagic.Scene({
     triggerElement: '#related-projects',
     duration: 0
   })
-  .triggerHook(.93)
+  .triggerHook(.91)
   .setClassToggle('#related-projects .animate4 .card','fadeInRight')
   .addTo(controller);
   let sceneRelatedProjects5 = new ScrollMagic.Scene({
     triggerElement: '#related-projects',
     duration: 0
   })
-  .triggerHook(.9)
+  .triggerHook(.89)
   .setClassToggle('#related-projects .animate5 .card','fadeInRight')
   .addTo(controller);
 
-// USERFLOW for #reasons-grid modal
+// USERFLOW for appearance of #reasons-grid modal
 // user clicks on an <a> within the #reasons-grid
 // modal dialog displays full content of <a>
 
-// SCRIPT for #reasons-grid modal
+// SCRIPT for appearance of #reasons-grid modal
 // get modal content <a>
 // listen for show.bs.modal
 $('#reasonsModal').on('show.bs.modal', function (event) {
@@ -109,11 +109,11 @@ $('#reasonsModal').on('show.bs.modal', function (event) {
 })
   
 
-// USERFLOW for #reasonsModal interaction
+// USERFLOW for interaction inside #reasonsModal 
 // user clicks one of icons at bottom of modal dialog
 // content from corresponding #reasons-grid li loads in modal
 
-// PSEUDOCODE for #reasonsModal interaction
+// PSEUDOCODE for interaction inside #reasonsModal 
 // listen for click  on <i> within modal
 $('#reasonsModal i').on('click', function (event) {
   // return index of clicked <i> within .modal-footer
@@ -136,8 +136,20 @@ $('#reasonsModal i').on('click', function (event) {
   modal.find('p.read-more').remove();
 })
 
-// USERFLOW for #reasonsModal interaction
+// add'l USERFLOW for interaction inside #reasonsModal 
 // user clicks on 'previous' or 'next' caret icon at bottom of modal dialog
 // content from corresponding #reasons-grid li loads in modal
 
 
+// hide Lorenzo's email from spambots
+  $("#email-prendini").on('click', function() {
+    event.preventDefault();
+    let parts = ["lorenzo", "amnh", "org", ".", "@"]; // split into array
+    let email = parts[0] + parts[4] + parts[1] + parts[3] + parts[2]; // piece it back together
+    // console.log(email); // make sure address came together correctly
+    let subject = 'Arachnology at AMNH'; // assign subject of email
+    window.location = 'mailto:' + email + '?subject=' + subject; // add mailto so click leads to user's email application
+  });
+
+
+// try [0] for index number in modal dialog
