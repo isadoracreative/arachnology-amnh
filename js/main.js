@@ -16,6 +16,7 @@ $(window).scroll(function () {
     }
   })
 
+// SCROLLMAGIC
 // ScrollMagic controller
 let controller = new ScrollMagic.Controller();
 
@@ -108,14 +109,14 @@ $('#reasonsModal').on('show.bs.modal', function (event) {
   modal.find('p.read-more').remove();
 })
   
-
 // USERFLOW for interaction inside #reasonsModal 
 // user clicks one of icons at bottom of modal dialog
 // content from corresponding #reasons-grid li loads in modal
 
-// PSEUDOCODE for interaction inside #reasonsModal 
-// listen for click  on <i> within modal
-$('#reasonsModal i').on('click', function (event) {
+// SCRIPT for interaction inside #reasonsModal 
+// listen for click on <i> within modal
+// add 'not' to selector to omit function for 'previous' and 'next' icons
+$('#reasonsModal i:not(:first-child,:last-child)').on('click', function (event) {
   // return index of clicked <i> within .modal-footer
   let reasonIndex = $('.modal-footer i').index(this);
   // subtract 1 to skip the first <i> ('previous' caret icon)
@@ -133,10 +134,53 @@ $('#reasonsModal i').on('click', function (event) {
   modal.find('p.read-more').remove();
 })
 
-// add'l USERFLOW for interaction inside #reasonsModal 
+// add'l USERFLOW for interaction inside #reasonsModal
 // user clicks on 'previous' or 'next' caret icon at bottom of modal dialog
-// content from corresponding #reasons-grid li loads in modal
+// content from previous or next #reasons-grid li loads in modal
 
+// add'l PSEUDOCODE for interaction inside #reasonsModal 
+// listen for click on <i> first-child within modal
+$('#reasonsModal i:first-child').on('click', function (event) {
+  // return html content of <h3> currently displayed in .modal-body  
+  let currentHeader = $('.modal-body h3').html();
+  // console.log(currentHeader);
+  // get the index of the <li> in #reasons-grid that contains that html in its <h3>
+  let headerIndex = $('#reasons-grid li:contains(' + currentHeader + ')').index();
+  // subtract 1 to get index of previous <li>
+  headerIndex -=1;
+  // console.log(headerIndex); // double check that it's the right index number
+  // get html from the <a> within that <li>
+  let content = $('#reasons-grid a:eq(' + headerIndex + ')').html();
+  // console.log(content); // double check that it's the correct content
+  
+  // target modal
+  let modal = $('.modal-content');
+  // replace html from modal body with new content
+  modal.find('.modal-body').html(content);
+  // remove p.read-more within modal
+  modal.find('p.read-more').remove();
+})
+// listen for click on <i> last-child within modal
+$('#reasonsModal i:last-child').on('click', function (event) {
+  // return html content of <h3> currently displayed in .modal-body  
+  let currentHeader = $('.modal-body h3').html();
+  // console.log(currentHeader);
+  // get the index of the <li> in #reasons-grid that contains that html in its <h3>
+  let headerIndex = $('#reasons-grid li:contains(' + currentHeader + ')').index();
+  // ad 1 to get index of next <li>
+  headerIndex +=1;
+  // console.log(headerIndex); // double check that it's the right index number
+  // get html from the <a> within that <li>
+  let content = $('#reasons-grid a:eq(' + headerIndex + ')').html();
+  // console.log(content); // double check that it's the correct content
+  
+  // target modal
+  let modal = $('.modal-content');
+  // replace html from modal body with new content
+  modal.find('.modal-body').html(content);
+  // remove p.read-more within modal
+  modal.find('p.read-more').remove();
+})
 
 // hide Lorenzo's email from spambots
   $("#email-prendini").on('click', function() {
