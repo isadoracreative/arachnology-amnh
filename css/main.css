@@ -83,7 +83,7 @@ body {
   z-index: -2;
 }
 #homepage-header {
-  background: #000 url("../images/Emperor_Scorpion_Under_UV_Light-contrast.jpg") no-repeat -100px -50px fixed;
+  background: #000 url("https://isadoracreative.github.io/arachnology-amnh/images/Emperor_Scorpion_Under_UV_Light-contrast.jpg") no-repeat -100px -50px fixed;
   background-size: auto 450px;
   height: 75vh;
   z-index: -1;
@@ -164,7 +164,7 @@ ul.show-less li p.read-more {
   color: #6dcff6 !important ;
 }
 #reasonsModal .modal-content {
-  background: white url("../images/vaejovidae-project-Site-07-P-rufulus.jpg") 70% -12px/45% no-repeat;
+  background: white url("https://isadoracreative.github.io/arachnology-amnh/images/vaejovidae-project-Site-07-P-rufulus.jpg") 70% -12px/45% no-repeat;
 }
 #reasonsModal .modal-footer i.fa {
   font-size: 1rem;
@@ -213,19 +213,19 @@ ul.show-less li p.read-more {
   padding-left: 6px;
 }
 #card-south-african {
-  background-image: url("../images/south-african-arachnid-biodiversity-TypeCatalogueNumberVerification-corrected.jpg");
+  background-image: url("https://isadoracreative.github.io/arachnology-amnh/images/south-african-arachnid-biodiversity-TypeCatalogueNumberVerification-corrected.jpg");
 }
 #card-karoo-biogaps {
-  background-image: url("../images/Lorenzo_2BPrendini_2Bdigging_2Bscorpion_2Bburrow.jpg");
+  background-image: url("https://isadoracreative.github.io/arachnology-amnh/images/Lorenzo_2BPrendini_2Bdigging_2Bscorpion_2Bburrow.jpg");
 }
 #card-western-cape {
-  background-image: url("../images/western-cape-contrast.jpg");
+  background-image: url("https://isadoracreative.github.io/arachnology-amnh/images/western-cape-contrast.jpg");
 }
 #card-vaejovidae {
-  background-image: url("../images/Fixing-scorpions.jpg");
+  background-image: url("https://isadoracreative.github.io/arachnology-amnh/images/Fixing-scorpions.jpg");
 }
 #card-solifugae {
-  background-image: url("../images/solifugae-G-fumi-in-jar-corrected.jpg");
+  background-image: url("https://isadoracreative.github.io/arachnology-amnh/images/solifugae-G-fumi-in-jar-corrected.jpg");
 }
 footer {
   background-color: #222;
