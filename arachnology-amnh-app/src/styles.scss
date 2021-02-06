@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+// Import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Custom variable overrides
+$theme-colors: (
+  "primary": #0468BF,
+  "success": #3B592D,
+  "info": #049DBF,
+  "warning": #D99E6A,
+  "danger": #D94D1A,
+  "light": #f8f9fa,
+  "dark": #8C4332
+);
+
+// Reimport Bootstrap to override with custom variables
+@import "../node_modules/bootstrap/scss/bootstrap";
