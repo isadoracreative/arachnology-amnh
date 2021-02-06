@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+// Import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Custom variable overrides
+$body-bg: #000;
+$body-color: #111;
+
+// Reimport Bootstrap to override with custom variables
+@import "../node_modules/bootstrap/scss/bootstrap";
