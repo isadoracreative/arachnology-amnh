@@ -2,8 +2,9 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Custom variable overrides
-$body-bg: #000;
-$body-color: #111;
+$theme-colors: (
+  "primary": #ff4136
+);
 
 // Reimport Bootstrap to override with custom variables
 @import "../node_modules/bootstrap/scss/bootstrap";
