@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavGlobalLink } from '../nav-global-link';
+import { NAVGLOBALLINKS } from '../nav-global-links';
 import { NavGlobalSearch } from '../nav-global-search';
 
 @Component({
@@ -9,9 +10,10 @@ import { NavGlobalSearch } from '../nav-global-search';
 })
 export class NavGlobalComponent implements OnInit {
 
-  navGlobalLink: NavGlobalLink = {
-    navLink: 'People'
-  };
+  // navGlobalLink: NavGlobalLink = {
+  //   navLink: ''
+  // };
+  navGlobalLinks = NAVGLOBALLINKS;
   navGlobalSearch: NavGlobalSearch = {
     navSearch: ''
   };
