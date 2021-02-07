@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SITEMAPLINKS } from '../site-map-links';
 
 @Component({
   selector: 'app-footer-global',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer-global.component.scss']
 })
 export class FooterGlobalComponent implements OnInit {
+
+  siteMapLinks = SITEMAPLINKS;
 
   constructor() { }
 

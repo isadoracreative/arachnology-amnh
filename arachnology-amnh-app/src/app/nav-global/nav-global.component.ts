@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavGlobalLink } from '../nav-global-link';
+// import { NavGlobalLink } from '../nav-global-link';
 import { NAVGLOBALLINKS } from '../nav-global-links';
 import { NavGlobalSearch } from '../nav-global-search';
 
