@@ -9,6 +9,7 @@ import { FooterGlobalComponent } from './footer-global/footer-global.component';
 import { AsideQuicklinksComponent } from './aside-quicklinks/aside-quicklinks.component';
 import { ArticleReasonsComponent } from './article-reasons/article-reasons.component';
 import { ArticleScience360Component } from './article-science360/article-science360.component';
+import { AsideRelatedProjectsComponent } from './aside-related-projects/aside-related-projects.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ArticleScience360Component } from './article-science360/article-science
     FooterGlobalComponent,
     AsideQuicklinksComponent,
     ArticleReasonsComponent,
-    ArticleScience360Component
+    ArticleScience360Component,
+    AsideRelatedProjectsComponent
   ],
   imports: [
     BrowserModule,
