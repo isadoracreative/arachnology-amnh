@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavGlobalLink } from '../nav-global-link';
 
 @Component({
   selector: 'app-nav-global',
@@ -7,11 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavGlobalComponent implements OnInit {
 
+  navGlobalLink: NavGlobalLink = {
+    navLink: 'People'
+  };
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  navLink = 'People';
 
 }
