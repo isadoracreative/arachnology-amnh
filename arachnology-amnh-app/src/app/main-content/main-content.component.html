@@ -1,51 +1,5 @@
 <main>
-    <div class="skew-top bg-white"></div>
-    <div class="container-fluid bg-white py-5">
-        <article class="container up" id="quicklinks">
-            <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="row justify-content-center">
-                <div class="col-6 col-md-4 p-4 px-lg-5">
-                    <a href="#">
-                        <img class="w-100 rounded-circle" src="https://isadoracreative.github.io/arachnology-amnh/images/PrendiniLabAugust2015-square.jpg" alt="Prendini Lab Members Outside of AMNH August 2015">
-                        <h4 class="text-center pt-3">People</h4>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 p-4 px-lg-5">
-                    <a href="#">
-                    <img class="w-100 rounded-circle" src="https://isadoracreative.github.io/arachnology-amnh/images/molecular-lab-photo1-square.jpg" alt="Arachnology Molecular Lab">
-                    <h4 class="text-center pt-3">Facilities</h4>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 p-4 px-lg-5">
-                    <a href="#">
-                    <img class="w-100 rounded-circle" src="https://isadoracreative.github.io/arachnology-amnh/images/scorpionbottles3-square.jpg" alt="Bottled Collection Scorpions">
-                    <h4 class="text-center pt-3">Collections</h4>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 p-4 px-lg-5">
-                    <a href="#">
-                    <img class="w-100 rounded-circle" src="https://isadoracreative.github.io/arachnology-amnh/images/DSCN1182-square.jpg" alt="Lorenzo Prendini in the Field">
-                    <h4 class="text-center pt-3">Fieldwork</h4>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 p-4 px-lg-5">
-                    <a href="#">
-                    <img class="w-100 rounded-circle border border-secondary" src="https://isadoracreative.github.io/arachnology-amnh/images/Scorpion_2-square-shifted.jpg" alt="Scorpion Illustration">
-                    <h4 class="text-center pt-3">Publications</h4>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 p-4 px-lg-5">
-                    <a href="#">
-                    <img class="w-100 rounded-circle" src="https://isadoracreative.github.io/arachnology-amnh/images/south-african-arachnid-biodiversity-WorkingTogether-square.jpg" alt="Spiderweb with Dewdrops">
-                    <h4 class="text-center pt-3">Resources</h4>
-                    </a>
-                </div>
-                </div><!-- row -->
-            </div><!-- col-lg-10-->
-            </div><!-- row -->
-        </article><!-- container -->
-    </div><!-- container-fluid -->
+    <app-aside-quicklinks></app-aside-quicklinks>
     <article>
         <div class="container-fluid bg-danger py-5">
             <section class="container col-11 col-sm-10 col-md-8 col-lg-7 col-xl-6" id="why-scorpions">
@@ -161,99 +115,103 @@
             </section><!-- container -->
         </div><!-- container-fluid -->
     </article>
-    <div class="container-fluid bg-info py-5">
-        <article class="container py-3" id="science360-video">
-            <div class="row justify-content-center">
-            <div class="p-3 col-md-10 col-lg-8 col-xl-6 mb-3">
-                <div class="d-inline-block embed-responsive embed-responsive-16by9 animated">
-                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/249256321?title=0&byline=0&portrait=0" allowfullscreen></iframe>
+    <article>
+        <div class="container-fluid bg-info py-5">
+            <div class="container py-3" id="science360-video">
+                <div class="row justify-content-center">
+                <div class="p-3 col-md-10 col-lg-8 col-xl-6 mb-3">
+                    <div class="d-inline-block embed-responsive embed-responsive-16by9 animated">
+                    <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/249256321?title=0&byline=0&portrait=0" allowfullscreen></iframe>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-10 col-lg-8 col-xl-5 ml-xl-2 mt-xl-1">
-                <h1 class="text-white line-below">In The Field with Lorenzo Prendini</h1>
-                <p class="lead text-white"><em>Fast Draw: In Search of Scorpions </em> joins Lorenzo Prendini as he looks for new species of scorpions and researches their ancestries. He also studies how venomous species might benefit the medical community. Josh Landis and Mitch Butler follow Lorenzo out into the field to study scorpions and talk with him about his experiences through this research.
-                </p>
-                <p class="text-white">Courtesy of The National Science Foundation <a href="https://science360.gov/obj/video/d49dde11-f6de-42a0-89b1-4959831392fd/fast-draw-search-scorpions" target="_blank"> Science360.</a>
-                </p>
-            </div>
-            </div><!-- row justify-content-center --> 
-        </article><!-- science360-video -->
-    </div><!-- container -->
-    <div class="container-fluid bg-light py-5">
-        <aside class="container" id="related-projects">
-            <h2 class="text-info">Related Projects</h2>
-            <div class="row d-flex align-items-stretch">
-            <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4 animate1">
-                <div class="card bg-white w-100 animated">
-                <a href="http://jrsbiodiversity.org/grant/national-museum-bloemfontein" target="_blank">
-                    <div class="card-body d-flex align-items-end px-0 pb-0" id="card-south-african">
-                        <div class="card-title-bg px-3 pt-2 w-100">
-                        <h5 class="card-title text-white mb-2">South African Arachnid Biodiversity</h5>
+                <div class="col-md-10 col-lg-8 col-xl-5 ml-xl-2 mt-xl-1">
+                    <h1 class="text-white line-below">In The Field with Lorenzo Prendini</h1>
+                    <p class="lead text-white"><em>Fast Draw: In Search of Scorpions </em> joins Lorenzo Prendini as he looks for new species of scorpions and researches their ancestries. He also studies how venomous species might benefit the medical community. Josh Landis and Mitch Butler follow Lorenzo out into the field to study scorpions and talk with him about his experiences through this research.
+                    </p>
+                    <p class="text-white">Courtesy of The National Science Foundation <a href="https://science360.gov/obj/video/d49dde11-f6de-42a0-89b1-4959831392fd/fast-draw-search-scorpions" target="_blank"> Science360.</a>
+                    </p>
+                </div>
+                </div><!-- row --> 
+            </div><!-- container -->
+        </div><!-- container-fluid -->
+    </article>
+    <aside>
+        <div class="container-fluid bg-light py-5">
+            <div class="container" id="related-projects">
+                <h2 class="text-info">Related Projects</h2>
+                <div class="row d-flex align-items-stretch">
+                <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4 animate1">
+                    <div class="card bg-white w-100 animated">
+                    <a href="http://jrsbiodiversity.org/grant/national-museum-bloemfontein" target="_blank">
+                        <div class="card-body d-flex align-items-end px-0 pb-0" id="card-south-african">
+                            <div class="card-title-bg px-3 pt-2 w-100">
+                            <h5 class="card-title text-white mb-2">South African Arachnid Biodiversity</h5>
+                            </div>
+                        </div><!-- card.body -->
+                        <div class="card-footer bg-white px-3">
+                        <p class="card-text">Improvement and Integration of Arachnid Biodiversity Information in South Africa</p>
                         </div>
-                    </div><!-- card.body -->
-                    <div class="card-footer bg-white px-3">
-                    <p class="card-text">Improvement and Integration of Arachnid Biodiversity Information in South Africa</p>
-                    </div>
-                </a>
-                </div><!-- card -->
-            </div><!-- flex-wrap -->
-            <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4 animate2">
-                <div class="card bg-white w-100 animated">
-                <a href="http://www.sanbi.org/biogaps" target="_blank">
-                    <div class="card-body d-flex align-items-end px-0 pb-0" id="card-karoo-biogaps">
-                    <div class="card-title-bg px-3 pt-2 w-100">
-                        <h5 class="card-title text-white mb-2">Karoo BioGaps Project</h5>
-                    </div>
-                    </div>
-                    <div class="card-footer bg-white px-3">
-                    <p class="card-text">Filling Biodiversity Information Gaps</p>
-                    </div>
-                </a>
-                </div><!-- card -->
-            </div><!-- flex-wrap -->
-            <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4 animate3">
-                <div class="card bg-white w-100 animated">
-                <a href="http://www.speciesconservation.org/case-studies-projects/black-legged-burrowing-scorpion/2329" target="_blank">
-                    <div class="card-body d-flex align-items-end px-0 pb-0" id="card-western-cape">
-                    <div class="card-title-bg px-3 pt-2 w-100">
-                        <h5 class="card-title text-white mb-2">Western Cape Scorpions</h5>
-                    </div>
-                    </div>
-                    <div class="card-footer bg-white px-3">
-                    <p class="card-text">Assessing the Conservation Status of Endangered Scorpions in the Western Cape Province, South Africa</p>
-                    </div>
-                </a>
-                </div><!-- card -->
-            </div><!-- flex-wrap -->
-            <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4 animate4">
-                <div class="card bg-white w-100 animated">
-                <a href="http://www.vaejovidae.com" target="_blank">
-                    <div class="card-body d-flex align-items-end px-0 pb-0" id="card-vaejovidae">
-                    <div class="card-title-bg px-3 pt-2 w-100">
-                        <h5 class="card-title text-white mb-2">Vaejovidae Project</h5>
-                    </div>
-                    </div>
-                    <div class="card-footer bg-white px-3">
-                    <p class="card-text">REVSYS: Systematics of the Scorpion Family Vaejovidae</p>
-                    </div>
-                </a>
-                </div><!-- card -->
-            </div><!-- flex-wrap -->
-            <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4 animate5">
-                <div class="card bg-white w-100 animated">
-                <a href="http://www.solpugid.com" target="_blank">
-                    <div class="card-body d-flex align-items-end px-0 pb-0" id="card-solifugae">
-                    <div class="card-title-bg px-3 pt-2 w-100">
-                        <h5 class="card-title text-white mb-2">Solifugae Project</h5>
-                    </div>
-                    </div>
-                    <div class="card-footer bg-white px-3">
-                    <p class="card-text">Global Survey and Inventory of Solifugae</p>
-                    </div>
-                </a>
-                </div><!-- card -->
-            </div><!-- flex-wrap -->
-            </div><!-- row -->
-        </aside><!-- container -->
-    </div><!-- container-fluid -->
+                    </a>
+                    </div><!-- card -->
+                </div><!-- flex-wrap -->
+                <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4 animate2">
+                    <div class="card bg-white w-100 animated">
+                    <a href="http://www.sanbi.org/biogaps" target="_blank">
+                        <div class="card-body d-flex align-items-end px-0 pb-0" id="card-karoo-biogaps">
+                        <div class="card-title-bg px-3 pt-2 w-100">
+                            <h5 class="card-title text-white mb-2">Karoo BioGaps Project</h5>
+                        </div>
+                        </div>
+                        <div class="card-footer bg-white px-3">
+                        <p class="card-text">Filling Biodiversity Information Gaps</p>
+                        </div>
+                    </a>
+                    </div><!-- card -->
+                </div><!-- flex-wrap -->
+                <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4 animate3">
+                    <div class="card bg-white w-100 animated">
+                    <a href="http://www.speciesconservation.org/case-studies-projects/black-legged-burrowing-scorpion/2329" target="_blank">
+                        <div class="card-body d-flex align-items-end px-0 pb-0" id="card-western-cape">
+                        <div class="card-title-bg px-3 pt-2 w-100">
+                            <h5 class="card-title text-white mb-2">Western Cape Scorpions</h5>
+                        </div>
+                        </div>
+                        <div class="card-footer bg-white px-3">
+                        <p class="card-text">Assessing the Conservation Status of Endangered Scorpions in the Western Cape Province, South Africa</p>
+                        </div>
+                    </a>
+                    </div><!-- card -->
+                </div><!-- flex-wrap -->
+                <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4 animate4">
+                    <div class="card bg-white w-100 animated">
+                    <a href="http://www.vaejovidae.com" target="_blank">
+                        <div class="card-body d-flex align-items-end px-0 pb-0" id="card-vaejovidae">
+                        <div class="card-title-bg px-3 pt-2 w-100">
+                            <h5 class="card-title text-white mb-2">Vaejovidae Project</h5>
+                        </div>
+                        </div>
+                        <div class="card-footer bg-white px-3">
+                        <p class="card-text">REVSYS: Systematics of the Scorpion Family Vaejovidae</p>
+                        </div>
+                    </a>
+                    </div><!-- card -->
+                </div><!-- flex-wrap -->
+                <div class="col-sm-6 col-md-4 col-xl d-flex flex-wrap mb-4 animate5">
+                    <div class="card bg-white w-100 animated">
+                    <a href="http://www.solpugid.com" target="_blank">
+                        <div class="card-body d-flex align-items-end px-0 pb-0" id="card-solifugae">
+                        <div class="card-title-bg px-3 pt-2 w-100">
+                            <h5 class="card-title text-white mb-2">Solifugae Project</h5>
+                        </div>
+                        </div>
+                        <div class="card-footer bg-white px-3">
+                        <p class="card-text">Global Survey and Inventory of Solifugae</p>
+                        </div>
+                    </a>
+                    </div><!-- card -->
+                </div><!-- flex-wrap -->
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- container-fluid -->
+    </aside>
 </main>
