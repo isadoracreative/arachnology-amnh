@@ -10,6 +10,7 @@ import { ArticleReasonsComponent } from './article-reasons/article-reasons.compo
 import { ArticleScience360Component } from './article-science360/article-science360.component';
 import { AsideRelatedProjectsComponent } from './aside-related-projects/aside-related-projects.component';
 import { MainHomeComponent } from './main-home/main-home.component';
+import { NavGlobalComponent } from './nav-global/nav-global.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MainHomeComponent } from './main-home/main-home.component';
     ArticleReasonsComponent,
     ArticleScience360Component,
     AsideRelatedProjectsComponent,
-    MainHomeComponent
+    MainHomeComponent,
+    NavGlobalComponent
   ],
   imports: [
     BrowserModule,
